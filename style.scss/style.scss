@@ -55,14 +55,13 @@ li a.active {
   }
 
 .team {
-  height: 100vh;
   transition: all 0.4s ease-out;
   //background: #b8ff30;
 
 }
 
 .post-lead {
-  font-size:1em;
+  font-size:1.2rem;
 }
 
 .enlarge p {
@@ -75,7 +74,7 @@ li a.active {
   margin-right:5%;
 }
 
-/*PROGECTS*/
+/* progects */
 .photo {
   height: 100vh;
   position:relative;
@@ -88,6 +87,26 @@ li a.active {
   position:relative;
   margin-bottom:20px;
 }
+/* team */
+
+.team-img {
+  //margin-top:30px;
+  max-width: 200px;
+}
+
+.team-line {
+  margin-top: -20%;
+}
+
+h5.team-descript  {
+  margin-top: 30px;
+}
+
+.team-descript {
+  font-size:1.2rem;
+  //margin-left: 20px;
+}
+
 
 
 /* carousel */
