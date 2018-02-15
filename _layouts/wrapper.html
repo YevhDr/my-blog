@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ siye.title }}</title>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="/lib/jquery-2.1.4.min.js"></script>
+    <script src="/lib/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+
+
+        {% include header.html %}
+
+
+    </div>
+</header>
+{{ content }}
+
+<script>
+
+
+    //    var project = false;
+
+    d3.select('.project').on('click', function () {
+
+        d3.select('.project').classed('project', true).classed("col-md-4", false).classed("col-md-2", false).classed("col-md-8", true);
+        d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-8", false).classed("col-md-2", true);
+        d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-8", false).classed("col-md-2", true);
+        d3.selectAll(".post-lead").style("display", "none");
+    });
+
+    d3.select('.news').on('click', function () {
+        d3.select('.project').classed('project', true).classed("col-md-8", false).classed("col-md-4", false).classed("col-md-2", true);
+        d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-2", false).classed("col-md-8", true);
+        d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-2", true).classed("col-md-8", false);
+        d3.selectAll(".post-lead").style("display", "block");
+    });
+
+    d3.select('.team').on('click', function () {
+        d3.select('.project').classed('project', true).classed("col-md-8", false).classed("col-md-4", false).classed("col-md-2", true);
+        d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-8", false).classed("col-md-2", true);
+        d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-2", false).classed("col-md-8", true);
+        d3.selectAll(".post-lead").style("display", "none");
+    });
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

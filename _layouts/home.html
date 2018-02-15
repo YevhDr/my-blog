@@ -1,0 +1,153 @@
+---
+layout: wrapper
+---
+
+<div class="container">
+    <div class="row">
+        <div class="project col-md-4">
+            <div class="padding">
+                <h2>Проекти</h2>
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="photo">
+                                <h3 class="highlited"><span>Три дні перед весною</span></h3>
+                                <p>Today we want to show you how to create a simple blur effect for text-based items. The idea is</p>
+                                <button class="butt">Лінк на проект</button>
+                                <video autoplay loop="true">
+                                    <source src="http://texty.org.ua/video/maidan_maps/maidan-bg-blacked.mp4"
+                                            type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="photo">
+                                <h3 class="highlited"><span>Змієві вали</span></h3>
+                                <p>Today we want to show you how to create a simple blur effect for text-based items. The idea is</p>
+                                <button class="butt">Лінк на проект</button>
+
+                                <video autoplay loop="true">
+                                    <source src="http://texty.org.ua/d/zmiyevi-valy/video/starting-valy.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="photo">
+                                <h3 class="highlited"><span>Три дні перед весною</span></h3>
+                                <p>Хто, коли і де загинув на Майдані</p>
+                                <button class="butt">Лінк на проект</button>
+
+                                <video autoplay loop="true">
+                                    <source src="http://texty.org.ua/video/maidan_maps/maidan-bg-blacked.mp4"
+                                            type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="photo">
+                                <h3 class="highlited"><span>Змієві вали</span></h3>
+                                <p>Хто, коли і де загинув на Майдані</p>
+                                <button class="butt">Лінк на проект</button>
+
+                                <video autoplay loop="true">
+                                    <source src="http://texty.org.ua/d/zmiyevi-valy/video/starting-valy.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="news col-md-4">
+            <div class="padding">
+                <h2>Останні новини</h2>
+                {% for post in site.posts limit:5%}
+                <hr>
+                <h5 class="highlited"><span>{{ post.heading }}</span></h5>
+                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <p> {{ post.date | date: "%-d-%m-%Y" }}
+                <p>
+                <p class="post-lead"> {{ post.lead }} </p>
+
+                {% endfor %}
+            </div>
+        </div>
+        <div class="team col-md-4">
+            <div class="padding">
+                <h2>Команда</h2>
+                <p>
+                    Today we want to show you how to create a simple blur effect for text-based items. The idea is
+                    to
+                    have a set of text boxes that will get blurred and scaled down once we hover over them. The item
+                    in
+                    focus will scale up. This will create some kind of “focus” effect that drwas the attention to
+                    the
+                    currently hovered item. We’ll be using CSS3 transitions and some jQuery to apply the respective
+                    classes. Since CSS3 transitions are not supported in order browsers, the demo should be best
+                    viewed
+                    in Safari or Chrome (here we got the smoothest transitions).
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.carousel').carousel()
+
+</script>
+
+<!--{% for file in site.static_files %}-->
+<!--{% if file.image %}-->
+
+<!--<img src="{{ file.path }}" alt="{ file.name }">-->
+
+<!--{% endif %}-->
+<!--{% endfor %}-->
