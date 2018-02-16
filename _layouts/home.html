@@ -2,9 +2,9 @@
 layout: wrapper
 ---
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="project col-md-4">
+        <div class="project col-md-4 col-md-border">
             <div class="padding">
                 <h2>Проекти</h2>
 
@@ -103,11 +103,14 @@ layout: wrapper
         </div>
 
 
-        <div class="news col-md-4">
+
+
+
+        <div class="news col-md-4 col-md-border">
             <div class="padding">
                 <h2>Останні новини</h2>
                 {% for post in site.posts limit:20 %}
-                <hr>
+
                 <h5 class="highlited"><span>{{ post.heading }}</span></h5>
                 <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
                 <p> {{ post.date | date: "%-d-%m-%Y" }}
@@ -119,6 +122,14 @@ layout: wrapper
 
             </div>
         </div>
+
+
+
+
+
+
+
+
         <div class="team col-md-4">
             <div class="padding">
                 <h2>Команда</h2>

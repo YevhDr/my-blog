@@ -11,6 +11,18 @@ h4 {
 .header {
   background-color: green; }
 
+li {
+  /* 1st state */ }
+
+li:hover {
+  /* hover state */ }
+
+li:active {
+  /* click state */ }
+
+li.active {
+  /* after click state */ }
+
 .responsive {
   max-width: 100%; }
 
@@ -20,7 +32,6 @@ hr {
 .header-container {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #F2F2F2;
   padding: 1em 0; }
 
 header ul li {
@@ -37,8 +48,16 @@ li a.active {
   border-bottom: 2px solid #000000;
   font-weight: 300; }
 
+@media (min-width: 992px) {
+  .col-md-border:not(:last-child) {
+    border-right: 1px solid #d7d7d7; }
+
+  .col-md-border + .col-md-border {
+    border-left: 1px solid #d7d7d7;
+    margin-left: -1px; } }
 .project {
-  transition: all 0.4s ease-out; }
+  transition: all 0.4s ease-out;
+  border-right: 1px black; }
 
 .news {
   transition: all 0.4s ease-out; }
@@ -67,6 +86,9 @@ li a.active {
 .butt {
   position: relative;
   margin-bottom: 20px; }
+
+h5.highlited {
+  margin-top: 40px; }
 
 /* team */
 .team-img {
