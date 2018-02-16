@@ -2,10 +2,10 @@
 
 <nav class="header-container">
             <ul>
-                <li><a href="{{ site.url }}">Головна</a></li>
-                <li><a href="/news/">Новини</a></li>
-                <li><a href="/about/">Документація</a></li>
-                <li><a href="/donate/">Контакти</a></li>
+                <li><a href="{{ site.url | prepend base.url }}">Головна</a></li>
+                <li><a href="{{ /news/ | prepend base.url }}">Новини</a></li>
+                <li><a href="{{ /about/ |  prepend base.url }}">Документація</a></li>
+                <li><a href="{{ /donate/ |  prepend base.url }}">Контакти</a></li>
             </ul>
 
 
