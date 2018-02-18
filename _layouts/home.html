@@ -112,7 +112,7 @@ layout: wrapper
                 {% for post in paginator.posts %}
 
                 <h5 class="highlited"><span>{{ post.heading }}</span></h5>
-                <h4><a href="{{ post.url | prepend site.baseurl }}">{{ post.title }}</a></h4>
+                <h4><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h4>
                 <p> {{ post.date | date: "%-d-%m-%Y" }}
                 <p>
                 <p class="post-lead"> {{ post.lead }} </p>
