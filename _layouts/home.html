@@ -10,20 +10,52 @@ layout: wrapper
 
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                    </ol>
+                    <!--<ol class="carousel-indicators">-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+                    <!--</ol>-->
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
+
+                        <!---Carpathians-->
                         <div class="item active">
                             <div class="photo">
-                                <h3 class="highlited"><span>Три дні перед весною</span></h3>
-                                <p>Today we want to show you how to create a simple blur effect for text-based items. The idea is</p>
+                                <h3><span>Cвидовець. Анатомія Карпат</span></h3>
+                                <p>Розповідь про те, як влаштовані Карпати. Про вирубки, напівлегальні туристичні бази, полонини, скелі та едельвейси, проблеми гірського району та його перспективи.</p>
+                                <a type="button" href="http://texty.org.ua/d/carpathians-3d/" target="_blank" class="button butt">Перейти до проекту</a>
+
+                                <img style="width:100%" src="{{ site.baseurl }}/assets/img/projects/svydovec2.gif"/>
+
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+
+                        <!---fb-trolls-->
+                        <div class="item">
+                            <div class="photo">
+                                <h3><span>Тролесфера</span></h3>
+                                <p>«Тексти» вирахували мережу з близько 2 тисяч користувачів Фейсбуку, яка тісно пов’язана із групами бойовика ДНР Степана Мазури. Це мережа з публічних груп та користувачів, які, прикриваючись патріотичними слоганами, поширювали заклики до перевороту та протестів.</p>
+                                <a type="button" href="http://texty.org.ua/d/fb-trolls/" target="_blank" class="button butt">Перейти до проекту</a>
+
+                                <img style="width:100%" src="{{ site.baseurl }}/assets/img/projects/trolls.jpg"/>
+
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="photo">
+                                <h3><span>Три дні перед весною</span></h3>
+                                <p>Today we want to show you how to create a simple blur effect for text-based items.
+                                    The idea is</p>
                                 <button class="butt">Лінк на проект</button>
                                 <video autoplay loop="true">
                                     <source src="http://texty.org.ua/video/maidan_maps/maidan-bg-blacked.mp4"
@@ -38,40 +70,30 @@ layout: wrapper
 
                         <div class="item">
                             <div class="photo">
-                                <h3 class="highlited"><span>Змієві вали</span></h3>
-                                <p>Today we want to show you how to create a simple blur effect for text-based items. The idea is</p>
+                                <h3><span>Змієві вали</span></h3>
+                                <p>Today we want to show you how to create a simple blur effect for text-based items.
+                                    The idea is</p>
                                 <button class="butt">Лінк на проект</button>
 
                                 <video autoplay loop="true">
-                                    <source src="http://texty.org.ua/d/zmiyevi-valy/video/starting-valy.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="carousel-caption">
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="photo">
-                                <h3 class="highlited"><span>Три дні перед весною</span></h3>
-                                <p>Хто, коли і де загинув на Майдані</p>
-                                <button class="butt">Лінк на проект</button>
-
-                                <video autoplay loop="true">
-                                    <source src="http://texty.org.ua/video/maidan_maps/maidan-bg-blacked.mp4"
+                                    <source src="http://texty.org.ua/d/zmiyevi-valy/video/starting-valy.mp4"
                                             type="video/mp4">
                                 </video>
                             </div>
                             <div class="carousel-caption">
+
                             </div>
                         </div>
+
                         <div class="item">
                             <div class="photo">
-                                <h3 class="highlited"><span>Змієві вали</span></h3>
+                                <h3><span>Змієві вали</span></h3>
                                 <p>Хто, коли і де загинув на Майдані</p>
                                 <button class="butt">Лінк на проект</button>
 
                                 <video autoplay loop="true">
-                                    <source src="http://texty.org.ua/d/zmiyevi-valy/video/starting-valy.mp4" type="video/mp4">
+                                    <source src="http://texty.org.ua/d/zmiyevi-valy/video/starting-valy.mp4"
+                                            type="video/mp4">
                                 </video>
                             </div>
                             <div class="carousel-caption">
@@ -93,17 +115,8 @@ layout: wrapper
                 </div>
 
 
-
-
-
-
-
-
             </div>
         </div>
-
-
-
 
 
         <div class="news col-md-4 col-md-border">
@@ -123,7 +136,8 @@ layout: wrapper
                 {% if paginator.total_pages > 1 %}
                 <div class="pagination">
                     {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;
+                        Prev</a>
                     {% else %}
                     <span>&laquo; Попередня</span>
                     {% endif %}
@@ -134,7 +148,8 @@ layout: wrapper
                     {% elsif page == 1 %}
                     <a href="/">{{ page }}</a>
                     {% else %}
-                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
+                        page }}</a>
                     {% endif %}
                     {% endfor %}
 
@@ -150,16 +165,9 @@ layout: wrapper
         </div>
 
 
-
-
-
-
-
-
         <div class="team col-md-4">
             <div class="padding">
                 <h2>Команда</h2>
-
 
                 <div class="row">
                     <table>
@@ -170,14 +178,19 @@ layout: wrapper
 
                             </td>
                             <td>
-                                <h5 class="team-descript"><b>Роман Кульчинський</b></h5>
-                                <p class="team-descript">Виконавчий директор ГО «Агенція журналістики даних», головний редактор ТЕКСТІВ. Цінує хороші тексти і вчасні дедлайни.</p>
+                                <p class="team-descript">Виконавчий директор ГО «Агенція журналістики даних», головний
+                                    редактор ТЕКСТІВ. Цінує хороші тексти і вчасні дедлайни.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5 class="team-descript-name" style="text-align: right"><b>Роман<br><span
+                                        style="text-transform: uppercase;">Кульчинський</span> </b></h5>
+
                             </td>
                         </tr>
                         </tbody>
-                    </table>
-
-
+                    </table> <!--end of Roman-->
 
 
                     <table>
@@ -185,18 +198,19 @@ layout: wrapper
                         <tr>
                             <td>
                                 <img class="team-img" src="{{ site.baseurl }}/assets/img/tolik.png"/>
-
                             </td>
                             <td>
-                                <h5 class="team-descript"><b>Анатолій Бондаренко</b></h5>
-                                <p class="team-descript"> Заступник головного редактора, керівник напрямку журналістики даних та інфографіки.</p>
+<p class="team-descript"> Заступник головного редактора, керівник напрямку журналістики даних та інфографіки.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5 class="team-descript-name" style="text-align: right"><b>Анатолій<br><span
+                                        style="text-transform: uppercase;">Бондаренко</span> </b></h5>
                             </td>
                         </tr>
                         </tbody>
-                    </table>
-
-
-
+                    </table> <!--end of Tolik-->
 
                     <table>
                         <tbody>
@@ -206,14 +220,17 @@ layout: wrapper
 
                             </td>
                             <td>
-                                <h5 class="team-descript"><b>Олександр Оксимець</b></h5>
-                                <p class="team-descript">Аналітик даних. Збір і аналіз даних. Керівник проекту «Вкрадений Дніпро». Досліджує доступність публічного простору в Києві, маніпуляції громадською думкою за допомогою фальшивих соціологічних досліджень.</p>
+<p class="team-descript">Аналітик даних. Збір і аналіз даних. Керівник проекту «Вкрадений Дніпро». Досліджує доступність публічного простору в Києві, маніпуляції громадською думкою за допомогою фальшивих соціологічних досліджень.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5 class="team-descript-name" style="text-align: right"><b>Олександр<br><span
+                                        style="text-transform: uppercase;">Оксимець</span> </b></h5>
                             </td>
                         </tr>
                         </tbody>
-                    </table>
-
-
+                    </table> <!--end of Sashko-->
 
 
                     <table>
@@ -224,40 +241,46 @@ layout: wrapper
 
                             </td>
                             <td>
-                                <h5 class="team-descript"><b>Влад Герасименко</b></h5>
-                                <p class="team-descript">Програміст. Скрейпінг, обробка даних, аналіз даних. Також створює інтерактивні візуалізації з d3.js, фанатіє від роботи з картами. Цікавиться аналізом даних соціальних мереж.
+<p class="team-descript">Програміст. Скрейпінг, обробка даних, аналіз даних. Також створює інтерактивні візуалізації з d3.js, фанатіє від роботи з картами. Цікавиться аналізом даних соціальних мереж.
                                 </p>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <h5 class="team-descript-name" style="text-align: right"><b>Влад<br><span
+                                        style="text-transform: uppercase;">Герасименко</span> </b></h5>
+                            </td>
+                        </tr>
                         </tbody>
-                    </table>
-
-
+                    </table> <!--end of Sashko-->
 
                     <table>
                         <tbody>
                         <tr>
                             <td>
                                 <img class="team-img" src="{{ site.baseurl }}/assets/img/galyna.png"/>
-
                             </td>
                             <td>
-                                <h5 class="team-descript"><b>Галина Пастух</b></h5>
-                                <p class="team-descript">Керівник проектів. Відповідає за організаційний розвиток та роботу з донорами. Має досвід роботи в бізнесі.
-
-                                </p>
+                                <p class="team-descript">Керівник проектів. Відповідає за організаційний розвиток та
+                                    роботу з донорами. Має досвід роботи в бізнесі.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5 class="team-descript-name" style="text-align: right"><b>Галина<br><span
+                                        style="text-transform: uppercase;">Пастух</span> </b></h5>
                             </td>
                         </tr>
                         </tbody>
-                    </table>
+                    </table> <!--end of Galyna-->
 
 
 
-            </div>
+
+                </div>
 
 
 
-                </p>
             </div>
         </div>
     </div>
