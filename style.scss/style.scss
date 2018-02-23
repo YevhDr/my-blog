@@ -2,11 +2,11 @@
 --------- variables ----------*/
 //colors
 
-$main-text: #3E3D50;
-$base: #ECECEC;
-$color: #D73F45;
-$middle: #C4CB8D;
-$hover:#EC3A3E;
+$main-text: #294659;
+$base: #fff;
+$color: #6AAECD;
+$middle: #DD453C;
+$hover: #F9CCB2;
 
 //media-queries
 $brk-xlarge: '(max-width: 2570px)';
@@ -209,17 +209,16 @@ h5.highlited span {
   border-right: 1px solid grey;
 }
 
-//table {
-//  margin: 0 auto!important;
-//  border-collapse: collapse;
-//  border-style: hidden;
-//}
-//table td {
-//  //padding: 1rem!important;
-//  border: 0px solid #d7d7d7;
-//}
+/* ---------------------------
+--------- news page ----------*/
 
+.content {
+  margin-top:30px;
+}
 
+.page-title {
+  margin-top:30px;
+}
 
 /* ------------------------------------
 ------------- carousel --------------*/

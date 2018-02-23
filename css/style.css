@@ -4,16 +4,16 @@
 /* ---------------------------
 --------- style ----------*/
 body {
-  background-color: #ECECEC !important;
-  color: #3E3D50 !important; }
+  background-color: #fff !important;
+  color: #294659 !important; }
 
 header {
-  background-color: #D73F45 !important; }
+  background-color: #6AAECD !important; }
 
 h1 {
   font-size: 2em !important;
   margin-left: 35px !important;
-  color: #ECECEC !important; }
+  color: #fff !important; }
 
 h2 {
   font-size: 1em !important; }
@@ -21,7 +21,7 @@ h2 {
 h3 {
   font-size: 1.5em !important;
   font-weight: 800;
-  color: #C4CB8D !important; }
+  color: #DD453C !important; }
 
 h4 {
   font-size: 1.5em !important; }
@@ -30,13 +30,13 @@ h5 {
   line-height: 1.3em !important; }
 
 a {
-  color: #D73F45 !important; }
+  color: #6AAECD !important; }
 
 .highlited span {
-  background-color: #D73F45; }
+  background-color: #6AAECD; }
 
 li {
-  color: #3E3D50; }
+  color: #294659; }
 
 li:hover {
   /* hover state */ }
@@ -51,7 +51,7 @@ li.active {
   max-width: 100%; }
 
 hr {
-  color: #3E3D50;
+  color: #294659;
   margin-top: 0; }
 
 .header-container {
@@ -66,11 +66,11 @@ header ul li {
 
 header ul li a {
   text-decoration: none;
-  color: #ECECEC !important; }
+  color: #fff !important; }
 
 li a.active {
-  color: #3E3D50;
-  border-bottom: 2px solid #3E3D50;
+  color: #294659;
+  border-bottom: 2px solid #294659;
   font-weight: 300; }
 
 @media (min-width: 992px) {
@@ -82,7 +82,7 @@ li a.active {
     margin-left: -1px; } }
 .project {
   transition: all 0.4s ease-out;
-  border-right: 1px #3E3D50; }
+  border-right: 1px #294659; }
 
 .news {
   transition: all 0.4s ease-out; }
@@ -115,11 +115,11 @@ li a.active {
 
 h5.highlited {
   margin-top: 40px;
-  color: #ECECEC !important; }
+  color: #fff !important; }
 
 h5.highlited span {
   padding: 3px !important;
-  background-color: #C4CB8D !important; }
+  background-color: #DD453C !important; }
 
 /* ----------------------------
 --------------team ----------*/
@@ -139,6 +139,14 @@ h5.highlited span {
 .hor-line {
   border-right: 1px solid grey; }
 
+/* ---------------------------
+--------- news page ----------*/
+.content {
+  margin-top: 30px; }
+
+.page-title {
+  margin-top: 30px; }
+
 /* ------------------------------------
 ------------- carousel --------------*/
 .glyphicon .glyphicon-chevron-right:before {
@@ -156,8 +164,8 @@ h5.highlited span {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #D73F45;
-  border: 1px solid #ECECEC;
+  background-color: #6AAECD;
+  border: 1px solid #fff;
   border-radius: 10px; }
 
 .carousel-control {
