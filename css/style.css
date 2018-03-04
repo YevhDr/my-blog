@@ -85,7 +85,7 @@ header {
   background: #6AAECD; }
 
 p {
-  font-size: 1.1rem; }
+  font-size: 1.2rem; }
 
 p.foot {
   font-size: 1.1rem;
@@ -101,6 +101,26 @@ a.foot:hover {
 h1 {
   font-size: 2.5rem !important;
   color: #fff !important; }
+  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+    h1 {
+      font-size: 4rem !important; } }
+
+h2 {
+  color: #DD453C;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  z-index: 2000 !important;
+  font-size: 1.4rem !important;
+  line-height: 3.4rem;
+  font-weight: 400; }
+  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+    h2 {
+      font-size: 2rem;
+      line-height: 4rem; } }
+
+@media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+  .xs-top-margin {
+    margin-top: 10vh !important; } }
 
 h3 {
   font-size: 1.5rem !important;
@@ -146,6 +166,12 @@ hr {
   display: flex;
   flex-direction: column;
   padding: 1em 0; }
+
+.header-container a {
+  font-size: 1.3rem !important; }
+  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+    .header-container a {
+      font-size: 1.8rem !important; } }
 
 header ul li {
   display: inline-block;
@@ -294,7 +320,6 @@ h6.about-us {
   font-size: 0.9rem; }
 
 svg {
-  margin-top: -100px;
   position: absolute;
   width: 100%; }
   svg path {
@@ -329,20 +354,6 @@ svg {
 /* -------------------------
    basic
 ----------------------------- */
-h2 {
-  color: #DD453C;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  z-index: 2000 !important;
-  font-size: 1.4rem !important;
-  line-height: 3.4rem;
-  font-weight: 400; }
-  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
-    h2 {
-      margin-top: 10vh !important;
-      font-size: 2rem;
-      line-height: 4rem; } }
-
 ul {
   list-style-type: none;
   padding: 0; }
@@ -362,8 +373,8 @@ li.withborder:hover {
 -------------------------------- */
 @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
   .top-top {
-    padding-top: 10vh;
-    height: 90vh; } }
+    padding-top: 15vh;
+    height: 80vh; } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   .top-top {
     padding-top: 0;

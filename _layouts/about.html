@@ -7,9 +7,9 @@ layout: "wrapper"
     <section class="top-top">
         <div class="row">
             <div class="hidden-xs hidden-sm col-md-6">
+
                 <svg x="0px" y="0px"
-	 width="841.889px" height="595.281px" viewBox="0 0 841.889 595.281" enable-background="new 0 0 841.889 595.281"
-	 xml:space="preserve">
+	 width="841.889px" height="300px" viewBox="0 0 841.889 595.281" >
 <g>
 	<path id="longpath" class="case" fill="none" stroke="#CACACA" stroke-width="0.5" d="M375.715,509.267L375.715,509.267 M649.524,507.449L649.524,507.449
 		 M356.845,498.486L356.845,498.486 M350.738,495.527L350.738,495.527 M356.767,495.13L356.767,495.13 M354.809,496.019
@@ -310,7 +310,7 @@ layout: "wrapper"
 		l2.271-3.324l2.741,0.965l2.427-0.482l0.939,2.305l1.88-0.107l0.782-2.413l3.993,0.215l1.175,1.126l0.626-3.165l4.307-1.449
 		l0.783-2.041l2.897,3.114l1.801,6.219l1.252,1.178l-1.957,2.89l0.078,2.299l1.645,2.352l0.078,2.296l10.648-0.48l1.097,0.801
 		v-3.205l2.662,1.122l2.035-0.481l1.019-2.03l3.523-0.054"/>
-	<path fill="none" stroke="#CACACA" stroke-width="1.5" d="M375.715,509.267L375.715,509.267 M649.524,507.449L649.524,507.449
+	<path class="cooler" fill="none" stroke="#CACACA" stroke-width="1.5" d="M375.715,509.267L375.715,509.267 M649.524,507.449L649.524,507.449
 		 M356.845,498.486L356.845,498.486 M350.738,495.527L350.738,495.527 M356.767,495.13L356.767,495.13 M354.809,496.019
 		L354.809,496.019 M355.827,487.523L355.827,487.523 M356.453,487.375L356.453,487.375 M504.516,475.283L504.516,475.283
 		 M518.609,472.205L518.609,472.205 M518.688,472.005L518.688,472.005 M519.783,470.962L519.783,470.962 M520.097,470.664
@@ -1795,10 +1795,12 @@ layout: "wrapper"
 	</g>
 </g>
 </svg>
+
             </div>
-            <div class="col-xs-offset-1 col-xs-10 col-md-4">
+            <div class="col-md-4">
+				<div class="padding">
                 <div class="animation-element slide-left testimonial">
-                    <h2>місія</h2>
+                    <h2 class="xs-top-margin">місія</h2>
 
                     <p><span style="color:#6AAECD">Сприяти прозорості влади шляхом розвитку якісної журналістики та журналістики даних,
                     яка
@@ -1813,6 +1815,7 @@ layout: "wrapper"
                 </div>
             </div>
         </div>
+			</div>
     </section>
 
     <section>
@@ -1820,7 +1823,7 @@ layout: "wrapper"
 
                 <div class="col-md-4 col-md-border">
                     <div class="padding">
-                        <h2>Напрями діяльності</h2>
+                        <h2 class="xs-top-margin">Напрями діяльності</h2>
                         <img id="backimg" src="https://cdn-images-1.medium.com/max/1600/0*0asqH3xLM_dml86-."/>
 
                         <ul>
@@ -1835,7 +1838,7 @@ layout: "wrapper"
 
                 <div class="col-md-4 col-md-border">
                     <div class="padding">
-                        <h2>Пріоритетні теми</h2>
+                        <h2 class="xs-top-margin">Пріоритетні теми</h2>
 						<canvas id="c"></canvas>
 
                         <ul>
@@ -1867,7 +1870,7 @@ layout: "wrapper"
                 <!--<div class="animation-element slide-left testimonial">-->
                 <div class="col-md-4 ">
                     <div class="padding">
-                        <h2>Правління</h2>
+                        <h2 class="xs-top-margin">Правління</h2>
                         <table>
                             <tbody>
                             <tr>
@@ -2025,7 +2028,7 @@ layout: "wrapper"
     var ctx = c.getContext("2d");
 
     //making the canvas full screen
-    c.height = window.innerHeight;
+    c.height = 800;
     c.width = window.innerWidth;
 
     //chinese characters - taken from the unicode charset

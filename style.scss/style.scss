@@ -122,7 +122,7 @@ header {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 p.foot {
@@ -153,8 +153,38 @@ h1 {
   font-size: 2.5rem!important;
   //margin-left: 35px!important;
   color:$base!important;
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 4rem!important;
+  }
 }
 
+h2 {
+  color: $middle;
+  letter-spacing: 4px;
+  text-transform:uppercase;
+  z-index: 2000 !important;
+  font-size: 1.4rem!important;
+  line-height: 3.4rem;
+  font-weight: 400;
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+.xs-top-margin {
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top: 10vh!important;
+  }
+}
 
 h3 {
   font-size: 1.5rem!important;
@@ -172,6 +202,7 @@ h5{
 
 a {
   color:$color;
+
 }
 
 a:hover {
@@ -213,6 +244,18 @@ hr {
   display: flex;
   flex-direction: column;
   padding: 1em 0;
+
+}
+
+.header-container a {
+  font-size: 1.3rem!important;
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 1.8rem!important;
+
+  }
 }
 
 header ul li {
@@ -424,7 +467,7 @@ h6.about-us {
 //page about us
 
 svg {
-  margin-top:-100px;
+  //margin-top:-100px;
   position: absolute;
   width:100%;
 
@@ -477,23 +520,7 @@ svg {
 ----------------------------- */
 
 
-h2 {
-  color: $middle;
-  letter-spacing: 4px;
-  text-transform:uppercase;
-  z-index: 2000 !important;
-  font-size: 1.4rem!important;
-  line-height: 3.4rem;
-  font-weight: 400;
 
-  @media #{$brk-narrow},
-  #{$brk-spnarrow},
-  #{$brk-iphone} {
-    margin-top: 10vh!important;
-    font-size: 2rem;
-    line-height: 4rem;
-  }
-}
 
 ul {
   list-style-type: none;
@@ -533,8 +560,8 @@ section {
   #{$brk-large},
   #{$brk-medium}
   {
-    padding-top:10vh;
-    height: 90vh;
+    padding-top:15vh;
+    height: 80vh;
 
   }
 
