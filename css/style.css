@@ -84,36 +84,34 @@ header {
   /* Height of the footer */
   background: #6AAECD; }
 
+p {
+  font-size: 1.1rem; }
+
 p.foot {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: white; }
 
 a.foot {
-  font-size: 1.2rem;
   color: white;
   border-bottom: 1px dashed; }
 
 a.foot:hover {
-  font-size: 1.2rem;
   color: #DD453C; }
 
 h1 {
-  font-size: 2em !important;
+  font-size: 2.5rem !important;
   color: #fff !important; }
 
-h2 {
-  font-size: 1em !important; }
-
 h3 {
-  font-size: 1.5em !important;
+  font-size: 1.5rem !important;
   font-weight: 800;
   color: #DD453C !important; }
 
 h4 {
-  font-size: 1.5em !important; }
+  font-size: 1.5rem !important; }
 
 h5 {
-  line-height: 1.3em !important; }
+  line-height: 1.6rem !important; }
 
 a {
   color: #6AAECD; }
@@ -152,7 +150,7 @@ hr {
 header ul li {
   display: inline-block;
   padding: 0 1.4em 0 0;
-  font-size: 0.9em; }
+  font-size: 1rem; }
 
 header ul li a {
   text-decoration: none;
@@ -198,6 +196,9 @@ li a.active {
   position: relative;
   width: 100% !important;
   overflow: hidden; }
+  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+    .photo {
+      height: 50vh; } }
 
 .butt {
   color: #6AAECD !important;
@@ -279,7 +280,7 @@ a.button {
 ------page about us------*/
 h6.about-us {
   margin-top: 100px;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   text-transform: uppercase;
   color: grey;
   letter-spacing: 5px; }
@@ -290,7 +291,7 @@ h6.about-us {
   color: #DD453C;
   text-align: right;
   cursor: hand;
-  font-size: 0.9em; }
+  font-size: 0.9rem; }
 
 svg {
   margin-top: -100px;
@@ -333,9 +334,14 @@ h2 {
   letter-spacing: 4px;
   text-transform: uppercase;
   z-index: 2000 !important;
-  font-size: 1.8rem;
+  font-size: 1.4rem !important;
   line-height: 3.4rem;
   font-weight: 400; }
+  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+    h2 {
+      margin-top: 10vh !important;
+      font-size: 2rem;
+      line-height: 4rem; } }
 
 ul {
   list-style-type: none;
@@ -358,6 +364,10 @@ li.withborder:hover {
   .top-top {
     padding-top: 10vh;
     height: 90vh; } }
+@media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+  .top-top {
+    padding-top: 0;
+    height: 30vh; } }
 
 @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
   .full-width {

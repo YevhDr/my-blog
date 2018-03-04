@@ -86,7 +86,9 @@ $brk-iphone: '(max-width: 374px)';
 /* ---------------------------
 --------- style ----------*/
 
+
 body {
+
   margin:0;
   padding:0;
   height: 100%;
@@ -119,19 +121,21 @@ header {
   background:$color;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 p.foot {
-  font-size:1.2rem;
+  font-size: 1.1rem;
   color:white;
 }
 
-a.foot{
-  font-size:1.2rem;
+a.foot {
   color:white;
   border-bottom:1px dashed;
 }
 
 a.foot:hover{
-  font-size:1.2rem;
   color:$middle;
 }
 
@@ -146,28 +150,24 @@ a.foot:hover{
 //}
 
 h1 {
-  font-size: 2em!important;
+  font-size: 2.5rem!important;
   //margin-left: 35px!important;
   color:$base!important;
 }
 
-h2 {
-
-  font-size: 1em!important;
-}
 
 h3 {
-  font-size: 1.5em!important;
+  font-size: 1.5rem!important;
   font-weight: 800;
   color:$middle!important;
 }
 
 h4 {
-  font-size: 1.5em!important;
+  font-size: 1.5rem!important;
 }
 
 h5{
-  line-height: 1.3em!important;
+  line-height: 1.6rem!important;
 }
 
 a {
@@ -218,7 +218,7 @@ hr {
 header ul li {
   display: inline-block;
   padding: 0 1.4em 0 0;
-  font-size: 0.9em;
+  font-size: 1rem;
 }
 header ul li a {
   text-decoration: none;
@@ -280,7 +280,15 @@ li a.active {
   height: 100vh;
   position:relative;
   width: 100%!important;
-  overflow: hidden; }
+  overflow: hidden;
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    height: 50vh;
+  }
+
+}
 
 .butt {
   color:$color!important;
@@ -394,7 +402,7 @@ a.button {
 
 h6.about-us {
   margin-top:100px;
-  font-size:1.4em;
+  font-size:1.4rem;
   text-transform: uppercase;
   color:grey;
   letter-spacing: 5px;
@@ -407,7 +415,7 @@ h6.about-us {
   color:$middle;
   text-align: right;
   cursor: hand;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 
 }
 
@@ -470,16 +478,21 @@ svg {
 
 
 h2 {
-
-  //margin-bottom:30px;
   color: $middle;
   letter-spacing: 4px;
   text-transform:uppercase;
   z-index: 2000 !important;
-  font-size: 1.8rem;
+  font-size: 1.4rem!important;
   line-height: 3.4rem;
   font-weight: 400;
 
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    margin-top: 10vh!important;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
 }
 
 ul {
@@ -523,6 +536,13 @@ section {
     padding-top:10vh;
     height: 90vh;
 
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    padding-top:0;
+    height: 30vh;
   }
 }
 
