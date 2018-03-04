@@ -12,54 +12,80 @@
     <script src="https://d3js.org/d3.v3.min.js"></script>
 </head>
 <body>
-<header>
-    <div class="container">
+<div id="container">
+    <header>
+        <div class="container">
 
 
-        {% include header.html %}
+            {% include header.html %}
 
 
-    </div>
-</header>
-{{ content }}
+        </div>
+    </header>
 
-<script>
+    {{ content }}
 
-
-    //    var project = false;
-
-    d3.select('.project').on('click', function () {
-
-        d3.select('.project').classed('project', true).classed("col-md-4", false).classed("col-md-8", true);
-        d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-6", false).classed("col-md-2", true);
-        d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-8", false).classed("col-md-2", true);
-        d3.selectAll(".post-lead").style("display", "none");
-        d3.selectAll(".team-descript").style("display", "none");
-    });
-
-    d3.select('.news').on('click', function () {
-        d3.select('.project').classed('project', true).classed("col-md-8", false).classed("col-md-4", true);
-        d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-2", false).classed("col-md-6", true);
-        d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-2", true).classed("col-md-8", false);
-        d3.selectAll(".post-lead").style("display", "block");
-        d3.selectAll(".team-descript").style("display", "none");
-    });
-
-    d3.select('.team').on('click', function () {
-        d3.select('.project').classed('project', true).classed("col-md-8", false).classed("col-md-4", true);
-        d3.select('.news').classed('news', true).classed("col-md-2", false).classed("col-md-6", false).classed("col-md-4", true);
-        d3.select('.team').classed('team', true).classed("col-md-2", false).classed("col-md-4", true);
-        d3.selectAll(".post-lead").style("display", "block");
-        d3.selectAll(".team-descript").style("display", "block");
-    });
-
-</script>
-<script>
-    jQuery('li').click(function(){
-        jQuery(this).toggleClass('active');
-    });
-</script>
+    <script>
 
 
+        //    var project = false;
+
+        d3.select('.project').on('click', function () {
+
+            d3.select('.project').classed('project', true).classed("col-md-4", false).classed("col-md-8", true);
+            d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-6", false).classed("col-md-2", true);
+            d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-8", false).classed("col-md-2", true);
+            d3.selectAll(".post-lead").style("display", "none");
+            d3.selectAll(".team-descript").style("display", "none");
+        });
+
+        d3.select('.news').on('click', function () {
+            d3.select('.project').classed('project', true).classed("col-md-8", false).classed("col-md-4", true);
+            d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-2", false).classed("col-md-6", true);
+            d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-2", true).classed("col-md-8", false);
+            d3.selectAll(".post-lead").style("display", "block");
+            d3.selectAll(".team-descript").style("display", "none");
+        });
+
+        d3.select('.team').on('click', function () {
+            d3.select('.project').classed('project', true).classed("col-md-8", false).classed("col-md-4", true);
+            d3.select('.news').classed('news', true).classed("col-md-2", false).classed("col-md-6", false).classed("col-md-4", true);
+            d3.select('.team').classed('team', true).classed("col-md-2", false).classed("col-md-4", true);
+            d3.selectAll(".post-lead").style("display", "block");
+            d3.selectAll(".team-descript").style("display", "block");
+        });
+
+    </script>
+    <script>
+        jQuery('li').click(function () {
+            jQuery(this).toggleClass('active');
+        });
+    </script>
+
+    <div id="prefooter"></div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="foot">Громадська організація «Агенція журналістики даних»</p>
+
+                        <p class="foot"><a class="foot" href="https://telegram.me/textyorgua" target="_blank">Ми у Телеграмі</a></p>
+                        <p class="foot"><a class="foot" href="http://facebook.com/texty.org.ua" target="_blank">Ми у Фейсбуці</a></p>
+                        <p class="foot"><a class="foot" href="http://twitter.com/textyorgua" target="_blank">Ми у Твітері</a></p>
+                    </div>
+                    <div class="col-md-offset-4 col-md-4">
+                        <!--<p class="foot">Адреса:</p>-->
+                        <!--<p class="foot">Телефон:</p>-->
+                        <p class="foot">Електрона пошта: texty.team@gmail.com</p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
 </body>
 </html>

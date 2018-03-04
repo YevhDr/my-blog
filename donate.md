@@ -1,6 +1,7 @@
 ---
-layout: "wrapper"
+layout: "about"
 ---
 
-Donate to our site
+
+
 

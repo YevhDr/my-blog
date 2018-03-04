@@ -87,17 +87,67 @@ $brk-iphone: '(max-width: 374px)';
 --------- style ----------*/
 
 body {
+  margin:0;
+  padding:0;
+  height: 100%;
+  position: relative;
   background-color: $base!important;
   color:$main-text!important;
+  font-family: 'Sofia Pro', sans-serif!important;
+}
+
+#container {
+  min-height:100%;
+  position:relative;
 }
 
 header {
   background-color: $color !important;
 }
 
+#prefooter {
+  height:100px;
+}
+
+#footer {
+  position:absolute;
+  padding:30px;
+  bottom:0;
+  margin-top:50px;
+  width:100%;
+  min-height:60px;   /* Height of the footer */
+  background:$color;
+}
+
+p.foot {
+  font-size:1.2rem;
+  color:white;
+}
+
+a.foot{
+  font-size:1.2rem;
+  color:white;
+  border-bottom:1px dashed;
+}
+
+a.foot:hover{
+  font-size:1.2rem;
+  color:$middle;
+}
+
+//footer {
+//  position: relative;
+//  right: 0;
+//  bottom: 0!important;
+//  left: 0;
+//  width: 100%;
+//  min-height: 50px;
+//  background-color: $color !important;
+//}
+
 h1 {
   font-size: 2em!important;
-  margin-left: 35px!important;
+  //margin-left: 35px!important;
   color:$base!important;
 }
 
@@ -121,7 +171,7 @@ h5{
 }
 
 a {
-  color:$color!important;
+  color:$color;
 }
 
 a:hover {
@@ -268,14 +318,14 @@ h5.highlited span {
 .team-descript-name  {
   margin-top: -30px;
   margin-right: 30px;
-  margin-bottom: 50px;
+  //margin-bottom: 30px;
   color: $middle;
 }
 
 .team-descript {
   font-size:1.2rem;
   margin-left: 20px;
-  margin-top: 50px;
+  //margin-top: 30px;
 
 }
 
@@ -335,4 +385,215 @@ a.button {
 
   text-decoration: none;
   color: initial;
+}
+
+
+/*-------------------------
+------page about us------*/
+
+
+h6.about-us {
+  margin-top:100px;
+  font-size:1.4em;
+  text-transform: uppercase;
+  color:grey;
+  letter-spacing: 5px;
+}
+
+
+.text {
+  margin-top: 15px!important;
+  font-style: italic;
+  color:$middle;
+  text-align: right;
+  cursor: hand;
+  font-size: 0.9em;
+
+}
+
+
+
+//page about us
+
+svg {
+  margin-top:-100px;
+  position: absolute;
+  width:100%;
+
+  path {
+    //stroke-width: 0.5;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: draw;
+    animation-timing-function: linear;
+    &.case {
+      stroke: #38393b;
+      stroke-dasharray: 9556;
+      stroke-dashoffset: 9556;
+      animation-duration: 4s;
+      animation-delay: 1s;
+    }
+    &.cooler {
+      //stroke: #ddd;
+      stroke-dasharray: 420;
+      stroke-dashoffset: 420;
+      animation-duration: 2s;
+      animation-delay: 3s;
+    }
+    &#structure {
+      stroke: #999;
+      stroke-dasharray: 680;
+      stroke-dashoffset: 680;
+      animation-duration: 3s;
+      animation-delay: 2s;
+    }
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* -------------------------
+   basic
+----------------------------- */
+
+
+h2 {
+
+  //margin-bottom:30px;
+  color: $middle;
+  letter-spacing: 4px;
+  text-transform:uppercase;
+  z-index: 2000 !important;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li.withborder {
+  border: 1px solid #dfe0e2;
+  margin-bottom:10px;
+  padding:5px;
+  color:$color;
+}
+
+li.withborder:hover {
+  background-color: #ecedef;
+  font-weight: 500;
+}
+
+/* --------------------------------
+   section appearance animation
+-------------------------------- */
+section {
+  //padding-left:20%;
+
+
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium},
+  #{$brk-narrow} {
+
+  }
+}
+
+.top-top {
+
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium}
+  {
+    padding-top:10vh;
+    height: 90vh;
+
+  }
+}
+
+.full-width {
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    height: 90vh;
+  }
+}
+
+.animation-element {
+  padding-top:5%;
+  opacity: 0;
+  position: relative;
+}
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+.sub-menu {
+  position: absolute;
+  z-index: 1000;
+
+}
+
+.sub-menu li {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#c{
+  width: 100%;
+  margin-bottom:10px;
+  height:auto;
+
+}
+
+#backimg {
+  margin-bottom: 10px;
+  //position:absolute;
+  //z-index:1;
+  transition: all 0.3s;
+}
+
+
+//page finance
+
+.report {
+  margin-top:50px;
 }
