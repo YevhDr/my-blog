@@ -75,8 +75,12 @@ body {
 header {
   background-color: #6AAECD !important; }
 
-#prefooter {
-  height: 100px; }
+@media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
+  #prefooter {
+    height: 100px; } }
+@media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+  #prefooter {
+    height: 200px; } }
 
 #footer {
   position: absolute;
@@ -93,7 +97,7 @@ header {
     font-size: 1.3rem !important; } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   p {
-    font-size: 2.2rem !important; } }
+    font-size: 2rem !important; } }
 
 p.foot {
   font-size: 1.1rem;
@@ -131,6 +135,9 @@ h2 {
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   .xs-top-margin {
     margin-top: 10vh !important; } }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .xs-top-margin {
+    margin-top: 0 !important; } }
 
 h3 {
   font-weight: 800;
@@ -221,6 +228,9 @@ li a.active {
   transition: all 0.4s ease-out;
   border-right: 1px #294659; }
 
+.carousel {
+  width: 100% !important; }
+
 .news {
   transition: all 0.4s ease-out; }
 
@@ -243,13 +253,13 @@ li a.active {
   margin-right: 5%; }
 
 /* ---------------------------
---------- progects ----------*/
+--------- projects ----------*/
 .photo {
   height: 100vh;
   position: relative;
   width: 100% !important;
   overflow: hidden; }
-  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+  @media (max-width: 1024px) and (orientation: portrait), (max-width: 767px) and (orientation: portrait), (max-width: 374px) and (orientation: portrait) {
     .photo {
       height: 50vh; } }
 
@@ -276,6 +286,9 @@ h5.highlited span {
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   .team-img {
     max-width: 350px; } }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .team-img {
+    max-width: 150px; } }
 
 .team-descript-name {
   margin-top: -30px;
@@ -407,7 +420,7 @@ li.withborder:hover {
   .top-top {
     padding-top: 15vh;
     height: 80vh; } }
-@media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+@media (max-width: 1024px) and (orientation: portrait), (max-width: 767px) and (orientation: portrait), (max-width: 374px) and (orientation: portrait) {
   .top-top {
     padding-top: 0;
     height: 30vh; } }

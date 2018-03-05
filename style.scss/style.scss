@@ -118,7 +118,19 @@ header {
 }
 
 #prefooter {
-  height:100px;
+
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    height:100px;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    height:200px;
+  }
+
 }
 
 #footer {
@@ -141,7 +153,7 @@ p {
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    font-size: 2.2rem!important;
+    font-size: 2.0rem!important;
   }
 }
 
@@ -200,6 +212,16 @@ h2 {
   #{$brk-iphone} {
     margin-top: 10vh!important;
   }
+
+  @media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    margin-top: 0!important;
+  }
+
+
 }
 
 h3 {
@@ -341,6 +363,13 @@ li a.active {
   //background: #feff20;
 }
 
+
+.carousel {
+  width:100%!important;
+  //height:100%;
+}
+
+
 .news {
   transition: all 0.4s ease-out;
   //background: #d6ff4d;
@@ -380,20 +409,20 @@ li a.active {
 
 
 /* ---------------------------
---------- progects ----------*/
+--------- projects ----------*/
 .photo {
   height: 100vh;
   position:relative;
   width: 100%!important;
   overflow: hidden;
 
-  @media #{$brk-narrow},
-  #{$brk-spnarrow},
-  #{$brk-iphone} {
+  @media #{$brk-narrow} and (orientation: portrait),
+  #{$brk-spnarrow} and (orientation: portrait),
+  #{$brk-iphone} and (orientation: portrait) {
     height: 50vh;
   }
-
 }
+
 
 .butt {
   color:$color!important;
@@ -427,7 +456,6 @@ h5.highlited span {
   #{$brk-large},
   #{$brk-medium} {
     max-width: 200px;
-
   }
 
   @media #{$brk-narrow},
@@ -436,6 +464,15 @@ h5.highlited span {
     max-width: 350px;
 
   }
+
+  @media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    max-width: 150px;
+  }
+
 
 }
 
@@ -642,9 +679,9 @@ section {
 
   }
 
-  @media #{$brk-narrow},
-  #{$brk-spnarrow},
-  #{$brk-iphone} {
+  @media #{$brk-narrow} and (orientation: portrait),
+  #{$brk-spnarrow} and (orientation: portrait) ,
+  #{$brk-iphone} and (orientation: portrait)  {
     padding-top:0;
     height: 30vh;
   }
@@ -721,3 +758,4 @@ img {
 .report {
   margin-top:50px;
 }
+
