@@ -24,7 +24,18 @@ $brk-iphone: '(max-width: 374px)';
 --------- social network ----------*/
 /* Share Bar */
 #share-bar {
-  font-size: 15px;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    font-size: 15px!important;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 20px!important;
+  }
+
 }
 
 /* Title */
@@ -121,11 +132,16 @@ header {
 }
 
 p {
-  font-size: 1.3rem;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    font-size: 1.3rem!important;
+  }
 
-  @media #{$brk-spnarrow},
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
   #{$brk-iphone} {
-    font-size: 1.6rem;
+    font-size: 2.2rem!important;
   }
 }
 
@@ -164,11 +180,17 @@ h2 {
   line-height: 3.4rem;
   font-weight: 400;
 
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium}
+  {
+    font-size: 1.3rem!important;
+  }
+
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 3rem!important;
   }
 }
 
@@ -181,30 +203,51 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem!important;
   font-weight: 800;
   color:$middle!important;
 
-  @media #{$brk-spnarrow},
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium}
+   {
+    font-size: 1.8rem!important;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
   #{$brk-iphone} {
-    font-size: 3rem;
+    font-size: 3.5rem!important;
   }
 }
 
 h4 {
-  font-size: 1.5rem!important;
-  @media #{$brk-spnarrow},
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    font-size: 1.8rem!important;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
   #{$brk-iphone} {
-    font-size: 3rem;
+    font-size: 4rem!important;
   }
 }
 
-h5{
-  line-height: 1.6rem!important;
-  @media #{$brk-spnarrow},
-  #{$brk-iphone} {
-    font-size: 3rem;
+h5 {
+
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    font-size: 1.5rem!important;
   }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 2.2rem!important;
+  }
+
 }
 
 a {
@@ -219,6 +262,7 @@ a:hover {
 
 .highlited span {
   background-color: $color;
+
 }
 
 
@@ -309,7 +353,18 @@ li a.active {
 }
 
 .post-lead {
-  font-size:1.3rem;
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    font-size: 1.3rem!important;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 2.5rem!important;
+  }
+
 }
 
 .enlarge p {
@@ -348,13 +403,15 @@ li a.active {
 
 
 h5.highlited {
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px!important;
   color:$base!important;
 
 }
 
 h5.highlited span {
   padding: 3px!important;
+
   background-color: $middle!important;
 }
 
@@ -365,8 +422,21 @@ h5.highlited span {
 --------------team ----------*/
 
 .team-img {
-  //margin-top:30px;
-  max-width: 200px;
+
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    max-width: 200px;
+
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    max-width: 350px;
+
+  }
+
 }
 
 .team-line {
