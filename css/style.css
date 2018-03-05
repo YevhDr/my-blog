@@ -85,7 +85,10 @@ header {
   background: #6AAECD; }
 
 p {
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
+  @media (max-width: 767px), (max-width: 374px) {
+    p {
+      font-size: 1.6rem; } }
 
 p.foot {
   font-size: 1.1rem;
@@ -126,12 +129,21 @@ h3 {
   font-size: 1.5rem !important;
   font-weight: 800;
   color: #DD453C !important; }
+  @media (max-width: 767px), (max-width: 374px) {
+    h3 {
+      font-size: 3rem; } }
 
 h4 {
   font-size: 1.5rem !important; }
+  @media (max-width: 767px), (max-width: 374px) {
+    h4 {
+      font-size: 3rem; } }
 
 h5 {
   line-height: 1.6rem !important; }
+  @media (max-width: 767px), (max-width: 374px) {
+    h5 {
+      font-size: 3rem; } }
 
 a {
   color: #6AAECD; }
@@ -205,7 +217,7 @@ li a.active {
   transition: all 0.4s ease-out; }
 
 .post-lead {
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
 .enlarge p {
   display: none; }

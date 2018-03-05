@@ -88,7 +88,6 @@ $brk-iphone: '(max-width: 374px)';
 
 
 body {
-
   margin:0;
   padding:0;
   height: 100%;
@@ -122,7 +121,12 @@ header {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+
+  @media #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 1.6rem;
+  }
 }
 
 p.foot {
@@ -138,16 +142,6 @@ a.foot {
 a.foot:hover{
   color:$middle;
 }
-
-//footer {
-//  position: relative;
-//  right: 0;
-//  bottom: 0!important;
-//  left: 0;
-//  width: 100%;
-//  min-height: 50px;
-//  background-color: $color !important;
-//}
 
 h1 {
   font-size: 2.5rem!important;
@@ -190,14 +184,27 @@ h3 {
   font-size: 1.5rem!important;
   font-weight: 800;
   color:$middle!important;
+
+  @media #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 3rem;
+  }
 }
 
 h4 {
   font-size: 1.5rem!important;
+  @media #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 3rem;
+  }
 }
 
 h5{
   line-height: 1.6rem!important;
+  @media #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size: 3rem;
+  }
 }
 
 a {
@@ -302,7 +309,7 @@ li a.active {
 }
 
 .post-lead {
-  font-size:1.2rem;
+  font-size:1.3rem;
 }
 
 .enlarge p {
