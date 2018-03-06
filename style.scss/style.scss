@@ -353,18 +353,18 @@ table.header-table tr td {
 table.header-table tr td:nth-child(1){
   text-align: left;
   border-right: 2px solid $color;
-  width:33%;
+  width:30%;
 }
 
 table.header-table tr td:nth-child(2){
   text-align: center;
   border-right: 2px solid $color;
-  width:34%;
+  width:30%;
 }
 
 table.header-table tr td:nth-child(3){
   text-align: right;
-  width:33%;
+  width:40%;
 }
 
 .top-border {
