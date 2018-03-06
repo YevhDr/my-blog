@@ -65,7 +65,7 @@ body {
   height: 100%;
   position: relative;
   background-color: #FFFAFA !important;
-  color: #294659 !important;
+  color: #121714 !important;
   font-family: "Sofia Pro", sans-serif !important; }
 
 #container {
@@ -174,7 +174,7 @@ a:hover {
   background-color: #121714; }
 
 li {
-  color: #294659; }
+  color: #121714; }
 
 li:hover {
   /* hover state */ }
@@ -189,7 +189,7 @@ li.active {
   max-width: 100%; }
 
 hr {
-  color: #294659;
+  color: #121714;
   margin-top: 0; }
 
 .header-container {
@@ -213,8 +213,8 @@ header ul li a {
   color: #FFFAFA !important; }
 
 li a.active {
-  color: #294659;
-  border-bottom: 2px solid #294659;
+  color: #121714;
+  border-bottom: 2px solid #121714;
   font-weight: 300; }
 
 @media (min-width: 992px) {
@@ -226,7 +226,7 @@ li a.active {
     margin-left: -1px; } }
 .project {
   transition: all 0.4s ease-out;
-  border-right: 1px #294659; }
+  border-right: 1px #121714; }
 
 .carousel {
   width: 100% !important; }
