@@ -347,19 +347,24 @@ hr {
 
 table.header-table tr td {
   text-transform:uppercase;
+
 }
 
 table.header-table tr td:nth-child(1){
   text-align: left;
   border-right: 1px solid $color;
+  width:33%;
 }
 
 table.header-table tr td:nth-child(2){
   text-align: center;
+  border-right: 1px solid $color;
+  width:34%;
 }
 
 table.header-table tr td:nth-child(3){
   text-align: right;
+  width:33%;
 }
 
 .top-border {
