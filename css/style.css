@@ -213,13 +213,13 @@ hr {
   margin-bottom: 5px;
   list-style: none; }
 
-.header-table table tr td:nth-child(1) {
+table.header-table tr td:nth-child(1) {
   text-align: left; }
 
-.header-table table tr td:nth-child(2) {
+table.header-table tr td:nth-child(2) {
   text-align: center; }
 
-.header-table table tr td:nth-child(3) {
+table.header-table tr td:nth-child(3) {
   text-align: right; }
 
 .top-border {
