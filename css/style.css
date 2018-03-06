@@ -207,8 +207,10 @@ hr {
 .header-container {
   text-transform: uppercase;
   margin-bottom: 30px;
-  margin-top: 30px;
-  border-bottom: 1px solid #121714; }
+  margin-top: 30px; }
+
+.top-border {
+  border-top: 1px solid #121714; }
 
 .flex-container {
   width: 100%;
