@@ -105,7 +105,7 @@ body {
   position: relative;
   background-color: $base!important;
   color:$main-text!important;
-  font-family: "Bliss Pro", serif !important;
+  font-family: "Bliss Pro" !important;
 }
 
 #container {
@@ -330,46 +330,37 @@ hr {
 
 .header-container {
 
-  //text-align: center;
-  //padding: 1em 0;
-  //text-transform:uppercase;
+
+  text-transform:uppercase;
 }
 
-//.header-container a {
-//  font-size: 1.3rem!important;
-//  text-align: center;
-//
-//  @media #{$brk-narrow},
-//  #{$brk-spnarrow},
-//  #{$brk-iphone} {
-//    font-size: 1.8rem!important;
-//  }
-//}
-//
-//.header-container ul {
-//  display: flex;
-//  flex-direction: row;
-//  justify-content:center;
-//}
-//
-//header ul li {
-//  display: inline-block;
-//  padding: 0 1.4em 0 0;
-//  font-size: 1rem;
-//}
-//header ul li a {
-//  text-decoration: none;
-//  color:$base!important;
-//}
-//
-//li {
-//  border-right:1px solid $color;
-//}
-li a.active {
-  color: $main-text;
-  border-bottom: 2px solid $main-text;
-  font-weight: 300;
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
+
+.flex-item {
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
 
 
 @media (min-width: 992px) {
