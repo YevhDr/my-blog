@@ -213,7 +213,7 @@ h2 {
   #{$brk-large},
   #{$brk-medium}
   {
-    font-size: 1.3rem!important;
+    font-size: 1.8rem!important;
   }
 
   @media #{$brk-narrow},
@@ -330,6 +330,8 @@ hr {
 
 .header-container {
   text-transform:uppercase;
+  margin-bottom:30px;
+  margin-top:30px;
 }
 
 .flex-container {
@@ -352,7 +354,7 @@ hr {
   color: white;
   font-weight: bold;
   font-size: 1.4rem;
-  text-align: center;
+  padding-right:10px;
 }
 
 

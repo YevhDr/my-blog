@@ -139,7 +139,7 @@ h2 {
   padding: 5px; }
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     h2 {
-      font-size: 1.3rem !important; } }
+      font-size: 1.8rem !important; } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     h2 {
       font-size: 3rem !important; } }
@@ -205,7 +205,9 @@ hr {
   margin-top: 0; }
 
 .header-container {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 .flex-container {
   padding: 0;
@@ -224,7 +226,7 @@ hr {
   color: white;
   font-weight: bold;
   font-size: 1.4rem;
-  text-align: center; }
+  padding-right: 10px; }
 
 @media (min-width: 992px) {
   .col-md-border:not(:last-child) {
