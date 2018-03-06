@@ -111,7 +111,6 @@ a.foot:hover {
   color: #121714; }
 
 h1 {
-  font-size: 3rem !important;
   letter-spacing: 3px;
   text-align: center;
   width: 100% !important;
@@ -208,6 +207,7 @@ hr {
   margin-top: 30px; }
 
 .flex-container {
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -223,7 +223,6 @@ hr {
   margin-top: 10px;
   color: white;
   font-weight: bold;
-  font-size: 1.4rem;
   padding-right: 10px; }
 
 @media (min-width: 992px) {
