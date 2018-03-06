@@ -12,30 +12,27 @@
     <script src="https://d3js.org/d3.v3.min.js"></script>
 </head>
 <body>
-<div class="row">
-    <div class="col-offset-md-4 col-md-4">
-        <nav class="header-container">
-            <ul>
-                <li><a href="{{ site.baseurl }}">Головна</a></li>
-                <li><a href="{{ site.baseurl }}/donate">Про нас</a></li>
-                <li><a href="{{ site.baseurl }}/about">Фінансування</a></li>
-            </ul>
-        </nav>
 
-    </div>
-</div>
 
 <div id="container">
 
     <header>
         <div class="container">
-
-
             {% include header.html %}
-
-
         </div>
     </header>
+    <div class="row">
+        <div class="col-offset-md-4 col-md-4">
+            <nav class="header-container">
+                <ul>
+                    <li><a href="{{ site.baseurl }}">Головна</a></li>
+                    <li><a href="{{ site.baseurl }}/donate">Про нас</a></li>
+                    <li><a href="{{ site.baseurl }}/about">Фінансування</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
 
     {{ content }}
 
