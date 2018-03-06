@@ -111,6 +111,7 @@ a.foot:hover {
   color: #121714; }
 
 h1 {
+  font-size: calc(100% - 0.3em) !important;
   letter-spacing: 3px;
   text-align: center;
   width: 100% !important;
