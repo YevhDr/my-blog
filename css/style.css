@@ -114,11 +114,9 @@ h1 {
   font-size: 3rem !important;
   letter-spacing: 3px;
   text-align: center;
+  width: 100% !important;
   color: #FFFAFA !important;
   font-weight: 400 !important; }
-  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
-    h1 {
-      font-size: 4rem !important; } }
 
 h1.small {
   font-size: 2rem !important;

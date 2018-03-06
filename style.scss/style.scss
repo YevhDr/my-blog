@@ -172,9 +172,10 @@ a.foot:hover{
 }
 
 h1 {
-  font-size: 3rem!important;
+  //font-size: 3rem!important;
   letter-spacing:3px;
   text-align: center;
+  width:100%!important;
   //margin-left: 35px!important;
   color:$base!important;
   font-weight: 400!important;
@@ -183,7 +184,7 @@ h1 {
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    font-size: 4rem!important;
+    //font-size: 4rem!important;
   }
 }
 
