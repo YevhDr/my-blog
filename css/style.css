@@ -207,7 +207,8 @@ hr {
   padding: 1em 0; }
 
 .header-container a {
-  font-size: 1.3rem !important; }
+  font-size: 1.3rem !important;
+  text-align: center; }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     .header-container a {
       font-size: 1.8rem !important; } }

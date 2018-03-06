@@ -335,6 +335,7 @@ hr {
 
 .header-container a {
   font-size: 1.3rem!important;
+  text-align: center;
 
   @media #{$brk-narrow},
   #{$brk-spnarrow},
