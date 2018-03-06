@@ -213,8 +213,12 @@ hr {
   margin-bottom: 5px;
   list-style: none; }
 
+table.header-table tr td {
+  text-transform: uppercase; }
+
 table.header-table tr td:nth-child(1) {
-  text-align: left; }
+  text-align: left;
+  border-right: 1px solid #121714; }
 
 table.header-table tr td:nth-child(2) {
   text-align: center; }
