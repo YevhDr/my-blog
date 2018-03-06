@@ -177,7 +177,7 @@ h1 {
   text-align: center;
   //margin-left: 35px!important;
   color:$base!important;
-  font-weight: 200;
+  font-weight: 400!important;
 
 
   @media #{$brk-narrow},
@@ -329,8 +329,6 @@ hr {
 }
 
 .header-container {
-
-
   text-transform:uppercase;
 }
 
@@ -350,15 +348,13 @@ hr {
 }
 
 .flex-item {
-  padding: 5px;
-  width: 200px;
-  height: 150px;
   margin-top: 10px;
   line-height: 150px;
   color: white;
   font-weight: bold;
   font-size: 1.4rem;
   text-align: center;
+  border-right:1px solid $color;
 }
 
 
