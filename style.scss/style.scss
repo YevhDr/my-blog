@@ -6,7 +6,7 @@ $main-text: #294659;
 $base: #FFFAFA;
 $color: #121714;
 $middle: #121714;
-$hover: #F9CCB2;
+$hover: #f9f7d4;
 
 //media-queries
 $brk-xlarge: '(max-width: 2570px)';
@@ -50,7 +50,7 @@ $brk-iphone: '(max-width: 374px)';
 
 /* Each button */
 .share-button {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 10px;
   margin-right: 3px;
   border: 1px solid #D3D6D2;
