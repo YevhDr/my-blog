@@ -372,10 +372,10 @@ hr {
 
 @media (min-width: 992px) {
   .col-md-border:not(:last-child) {
-    border-right: 1px solid #d7d7d7;
+    border-right: 1px solid $main-text;
   }
   .col-md-border + .col-md-border {
-    border-left: 1px solid #d7d7d7;
+    border-left: 1px solid $main-text;
     margin-left: -1px;
   }
 }
