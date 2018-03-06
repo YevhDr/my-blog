@@ -345,15 +345,15 @@ hr {
   list-style: none;
 }
 
-table .header-table tr td:nth-child(1){
+.header-table table tr td:nth-child(1){
   text-align: left;
 }
 
-table .header-table tr td:nth-child(2){
+.header-table table  tr td:nth-child(2){
   text-align: center;
 }
 
-table .header-table tr td:nth-child(3){
+.header-table table tr td:nth-child(3){
   text-align: right;
 }
 
