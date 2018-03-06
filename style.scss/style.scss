@@ -172,11 +172,12 @@ a.foot:hover{
 }
 
 h1 {
-  font-size: 4rem!important;
+  font-size: 3rem!important;
   letter-spacing:3px;
   text-align: center;
   //margin-left: 35px!important;
   color:$base!important;
+  font-weight: 200;
 
 
   @media #{$brk-narrow},
@@ -187,10 +188,9 @@ h1 {
 }
 
 h1.small {
-  font-size: 2.5rem!important;
+  font-size: 2rem!important;
   letter-spacing:3px;
-  //margin-left: 35px!important;
-  color:$base!important;
+   color:$base!important;
 
   @media #{$brk-narrow},
   #{$brk-spnarrow},
@@ -357,7 +357,7 @@ hr {
   line-height: 150px;
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 1.4rem;
   text-align: center;
 }
 
