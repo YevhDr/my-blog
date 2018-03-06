@@ -172,7 +172,7 @@ a.foot:hover{
 }
 
 h1 {
-  font-size:calc(100% - 0.3em)!important;
+  font-size:3.5rem!important;
   letter-spacing:3px;
   text-align: center;
   width:100%!important;
@@ -207,8 +207,7 @@ h2 {
   z-index: 2000 !important;
   line-height: 3.4rem;
   font-weight: 400;
-  border: 1px solid $color;
-  padding: 5px;
+
 
   @media #{$brk-xlarge},
   #{$brk-large},
@@ -222,6 +221,11 @@ h2 {
   #{$brk-iphone} {
     font-size: 3rem!important;
   }
+}
+
+h2 span {
+  border: 1px solid $color;
+  padding: 5px;
 }
 
 .xs-top-margin {
