@@ -66,7 +66,7 @@ body {
   position: relative;
   background-color: #FFFAFA !important;
   color: #121714 !important;
-  font-family: "Bliss Pro" !important; }
+  font-family: "Bliss Pro", serif !important; }
 
 #container {
   min-height: 100%;
@@ -207,7 +207,8 @@ hr {
 .header-container {
   text-transform: uppercase;
   margin-bottom: 30px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  border-bottom: 1px solid #121714; }
 
 .flex-container {
   width: 100%;
