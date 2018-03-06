@@ -188,10 +188,10 @@ h2 {
   letter-spacing: 4px;
   text-transform:uppercase;
   z-index: 2000 !important;
-  font-size: 1.4rem!important;
   line-height: 3.4rem;
   font-weight: 400;
   border: 1px solid $color;
+  padding: 5px;
 
   @media #{$brk-xlarge},
   #{$brk-large},
