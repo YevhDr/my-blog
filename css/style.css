@@ -66,7 +66,7 @@ body {
   position: relative;
   background-color: #FFFAFA !important;
   color: #121714 !important;
-  font-family: "Sofia Pro", sans-serif !important; }
+  font-family: monospace !important; }
 
 #container {
   min-height: 100%;
@@ -204,6 +204,7 @@ hr {
 .header-container {
   display: flex;
   flex-direction: column;
+  text-align: center;
   padding: 1em 0; }
 
 .header-container a {
