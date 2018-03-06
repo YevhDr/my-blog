@@ -66,7 +66,7 @@ body {
   position: relative;
   background-color: #FFFAFA !important;
   color: #121714 !important;
-  font-family: monospace !important; }
+  font-family: "Bliss Pro" !important; }
 
 #container {
   min-height: 100%;
@@ -111,7 +111,8 @@ a.foot:hover {
   color: #121714; }
 
 h1 {
-  font-size: 3rem !important;
+  font-size: 5rem !important;
+  letter-spacing: 3px;
   text-align: center;
   color: #FFFAFA !important; }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
@@ -119,7 +120,8 @@ h1 {
       font-size: 4rem !important; } }
 
 h1.small {
-  font-size: 2rem !important;
+  font-size: 3rem !important;
+  letter-spacing: 3px;
   color: #FFFAFA !important; }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     h1.small {
