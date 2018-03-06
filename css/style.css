@@ -205,9 +205,10 @@ hr {
   margin-top: 0; }
 
 .header-container {
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 30px; }
+  text-transform: uppercase; }
+
+.header-table {
+  width: 100%; }
 
 .top-border {
   border-top: 1px solid #121714; }
