@@ -205,7 +205,7 @@ hr {
 
 .header-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   padding: 1em 0;
   text-transform: uppercase; }
