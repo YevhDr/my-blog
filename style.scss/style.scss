@@ -330,15 +330,14 @@ hr {
 
 .header-container {
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   padding: 1em 0;
   text-transform:uppercase;
 }
 
 .header-container a {
-  -webkit-flex-direction: row;
+  -webkit-flex-direction: column;
   flex-direction: row;
   font-size: 1.3rem!important;
   text-align: center;
