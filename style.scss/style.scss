@@ -172,7 +172,7 @@ a.foot:hover{
 }
 
 h1 {
-  font-size:3.5rem!important;
+  font-size:3.3rem!important;
   letter-spacing:3px;
   text-align: center;
   width:100%!important;
@@ -254,7 +254,7 @@ h3 {
   #{$brk-large},
   #{$brk-medium}
    {
-    font-size: 1.8rem!important;
+    font-size: 2.5rem!important;
   }
 
   @media #{$brk-narrow},
@@ -268,7 +268,7 @@ h4 {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    font-size: 1.8rem!important;
+    font-size: 2.5rem!important;
   }
 
   @media #{$brk-narrow},
