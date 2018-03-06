@@ -111,7 +111,7 @@ a.foot:hover {
   color: #121714; }
 
 h1 {
-  font-size: 5rem !important;
+  font-size: 4rem !important;
   letter-spacing: 3px;
   text-align: center;
   color: #FFFAFA !important; }
@@ -120,7 +120,7 @@ h1 {
       font-size: 4rem !important; } }
 
 h1.small {
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
   letter-spacing: 3px;
   color: #FFFAFA !important; }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
@@ -205,12 +205,15 @@ hr {
 
 .header-container {
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
   text-align: center;
   padding: 1em 0;
   text-transform: uppercase; }
 
 .header-container a {
+  -webkit-flex-direction: row;
+  flex-direction: row;
   font-size: 1.3rem !important;
   text-align: center; }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {

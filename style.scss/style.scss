@@ -172,7 +172,7 @@ a.foot:hover{
 }
 
 h1 {
-  font-size: 5rem!important;
+  font-size: 4rem!important;
   letter-spacing:3px;
   text-align: center;
   //margin-left: 35px!important;
@@ -187,7 +187,7 @@ h1 {
 }
 
 h1.small {
-  font-size: 3rem!important;
+  font-size: 2.5rem!important;
   letter-spacing:3px;
   //margin-left: 35px!important;
   color:$base!important;
@@ -330,6 +330,7 @@ hr {
 
 .header-container {
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
   text-align: center;
   padding: 1em 0;
@@ -337,6 +338,8 @@ hr {
 }
 
 .header-container a {
+  -webkit-flex-direction: row;
+  flex-direction: row;
   font-size: 1.3rem!important;
   text-align: center;
 
