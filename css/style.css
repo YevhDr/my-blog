@@ -207,7 +207,8 @@ hr {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 1em 0; }
+  padding: 1em 0;
+  text-transform: uppercase; }
 
 .header-container a {
   font-size: 1.3rem !important;
