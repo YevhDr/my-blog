@@ -28,74 +28,70 @@
     </header>
 
 
-
     <div class="container">
-    <div class="row">
-        <div class="col-md-offset-4 col-md-4">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4">
 
-            <table class="header-table">
-                <tbody>
-                <tr>
-                    <td>
-                        <a href="{{ site.baseurl }}">Головна</a>
-                    </td>
+                <table class="header-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <a href="{{ site.baseurl }}">Головна</a>
+                        </td>
 
-                    <td>
-                        <a href="{{ site.baseurl }}/donate">Про нас</a>
-                    </td>
+                        <td>
+                            <a href="{{ site.baseurl }}/donate">Про нас</a>
+                        </td>
 
-                    <td>
-                        <a href="{{ site.baseurl }}/about">Фінансування</a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <!--<nav class="header-container">-->
+                        <td>
+                            <a href="{{ site.baseurl }}/about">Фінансування</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--<nav class="header-container">-->
                 <!--<ul class="flex-container">-->
-                    <!--<li class="flex-item "><a href="{{ site.baseurl }}">Головна</a></li>-->
-                    <!--<li class="flex-item "><a href="{{ site.baseurl }}/donate">Про нас</a></li>-->
-                    <!--<li class="flex-item"><a href="{{ site.baseurl }}/about">Фінансування</a></li>-->
+                <!--<li class="flex-item "><a href="{{ site.baseurl }}">Головна</a></li>-->
+                <!--<li class="flex-item "><a href="{{ site.baseurl }}/donate">Про нас</a></li>-->
+                <!--<li class="flex-item"><a href="{{ site.baseurl }}/about">Фінансування</a></li>-->
                 <!--</ul>-->
-            <!--</nav>-->
+                <!--</nav>-->
+            </div>
         </div>
     </div>
-</div>
-
-
 
 
     {{ content }}
 
     <script>
 
+        $('body').on('click', 'i.project.fa.fa-long-arrow-right', function () {
 
-        //    var project = false;
+            $(this).removeClass('fa-long-arrow-right').addClass('fa-long-arrow-left');
+            $('.project_target').removeClass('col-md-4').addClass('col-md-8');
+            $('.news_target').removeClass('col-md-4').addClass('col-md-2');
+            $('.team_target').removeClass('col-md-4').addClass('col-md-2');
+            $('.team-descript').css("display", "none");
+            $(".post-lead").css("display", "none");
 
-        d3.select('.project').on('click', function () {
-
-            d3.select('.project').classed('project', true).classed("col-md-4", false).classed("col-md-8", true);
-            d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-6", false).classed("col-md-2", true);
-            d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-8", false).classed("col-md-2", true);
-
-            d3.selectAll(".post-lead").style("display", "none");
-            d3.selectAll(".team-descript").style("display", "none");
         });
 
-        d3.select('.news').on('click', function () {
-            d3.select('.project').classed('project', true).classed("col-md-8", false).classed("col-md-4", true);
-            d3.select('.news').classed('news', true).classed("col-md-4", false).classed("col-md-2", false).classed("col-md-6", true);
-            d3.select('.team').classed('team', true).classed("col-md-4", false).classed("col-md-2", true).classed("col-md-8", false);
-            d3.selectAll(".post-lead").style("display", "block");
-            d3.selectAll(".team-descript").style("display", "none");
+
+        $('body').on('click', 'i.project.fa.fa-long-arrow-left', function () {
+
+            $(this).removeClass('fa-long-arrow-left').addClass('fa-long-arrow-right');
+            $('.project_target').removeClass('col-md-8').addClass('col-md-4');
+            $('.news_target').removeClass('col-md-2').removeClass('col-md-8').addClass('col-md-4');
+            $('.team_target').removeClass('col-md-2').removeClass('col-md-8').addClass('col-md-4');
+            $('.team-descript').css("display", "block");
+            $(".post-lead").css("display", "block");
         });
 
-        d3.select('.team').on('click', function () {
-            d3.select('.project').classed('project', true).classed("col-md-8", false).classed("col-md-4", true);
-            d3.select('.news').classed('news', true).classed("col-md-2", false).classed("col-md-6", false).classed("col-md-4", true);
-            d3.select('.team').classed('team', true).classed("col-md-2", false).classed("col-md-4", true);
-            d3.selectAll(".post-lead").style("display", "block");
-            d3.selectAll(".team-descript").style("display", "block");
-        });
+
+        //make longer
+
+
+
 
     </script>
     <script>
@@ -112,13 +108,15 @@
                 <div class="col-md-6">
                     <p class="foot">Громадська організація «Агенція журналістики даних»</p>
                     <p class="foot">Електрона пошта: texty.team@gmail.com</p>
-                    </div>
-                    <div class="col-md-offset-1 col-md-4">
+                </div>
+                <div class="col-md-offset-1 col-md-4">
 
-                        <p class="foot"><a class="foot" href="https://telegram.me/textyorgua" target="_blank">Ми у Телеграмі</a></p>
-                        <p class="foot"><a class="foot" href="http://facebook.com/texty.org.ua" target="_blank">Ми у Фейсбуці</a></p>
-                        <p class="foot"><a class="foot" href="http://twitter.com/textyorgua" target="_blank">Ми у Твітері</a></p>
-
+                    <p class="foot"><a class="foot" href="https://telegram.me/textyorgua" target="_blank">Ми у
+                        Телеграмі</a></p>
+                    <p class="foot"><a class="foot" href="http://facebook.com/texty.org.ua" target="_blank">Ми у
+                        Фейсбуці</a></p>
+                    <p class="foot"><a class="foot" href="http://twitter.com/textyorgua" target="_blank">Ми у
+                        Твітері</a></p>
 
 
                 </div>

@@ -111,7 +111,7 @@ a.foot:hover {
   color: #121714; }
 
 h1 {
-  font-size: 3.3rem !important;
+  font-size: 3rem !important;
   letter-spacing: 3px;
   text-align: center;
   width: 100% !important;
@@ -119,8 +119,9 @@ h1 {
   font-weight: 400 !important; }
 
 h1.small {
-  font-size: 2rem !important;
+  font-size: 1.8rem !important;
   letter-spacing: 3px;
+  margin-bottom: 20px;
   color: #FFFAFA !important; }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     h1.small {
@@ -348,11 +349,11 @@ h5.highlited span {
 /* ------------------------------------
 ------------- carousel --------------*/
 .glyphicon .glyphicon-chevron-right:before {
-  content: "тЦ╢";
+  content: "▶";
   color: grey; }
 
 .glyphicon .glyphicon-chevron-left:before {
-  content: "тЧА";
+  content: "◀";
   color: grey; }
 
 .carousel-indicators li {
