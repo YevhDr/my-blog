@@ -19,8 +19,12 @@
 /* All buttons */
 /* Each button */
 .share-button {
-  margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 70px !important;
+  margin-right: 3px;
+  border: 1px solid #D3D6D2;
+  padding: 5px 10px 5px 10px; }
+
+.share-button2 {
   margin-right: 3px;
   border: 1px solid #D3D6D2;
   padding: 5px 10px 5px 10px; }
@@ -162,22 +166,23 @@ h2 span {
     margin-top: 0 !important; } }
 
 h3 {
-  font-weight: 800;
+  font-weight: 800 !important;
   margin-top: 0 !important;
   color: #121714 !important; }
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     h3 {
-      font-size: 2.5rem !important; } }
+      font-size: 2rem !important;
+      line-height: 2.0rem; } }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     h3 {
-      font-size: 3.5rem !important; } }
+      font-size: 3rem !important; } }
 
 @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
   h4 {
-    font-size: 2.5rem !important; } }
+    font-size: 2.3rem !important; } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   h4 {
-    font-size: 4rem !important; } }
+    font-size: 3.7rem !important; } }
 
 h5 {
   margin-top: 0 !important; }
@@ -197,7 +202,8 @@ a:hover {
   border-bottom: 1px solid black; }
 
 .no-hover {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  border-bottom: none; }
 
 .highlited span {
   background-color: #121714; }
@@ -339,6 +345,7 @@ h5.highlited span {
 h5.team-descript-name {
   margin-top: -30px !important;
   margin-right: 30px;
+  font-weight: 800 !important;
   color: #121714; }
 
 .team-descript {
