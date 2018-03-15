@@ -20,7 +20,7 @@
 /* Each button */
 .share-button {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   margin-right: 3px;
   border: 1px solid #D3D6D2;
   padding: 5px 10px 5px 10px; }
@@ -41,6 +41,9 @@
   color: #121714; }
 
 .fa-twitter:hover {
+  background-color: #55acee; }
+
+.fa-telegram:hover {
   background-color: #55acee; }
 
 /* Google-PLus button */
@@ -66,7 +69,7 @@ body {
   position: relative;
   background-color: #FFFAFA !important;
   color: #121714 !important;
-  font-family: "", serif !important; }
+  font-family: "Bliss Pro", sans-serif !important; }
 
 #container {
   min-height: 100%;
@@ -94,7 +97,7 @@ header {
 
 @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
   p, li {
-    font-size: 1.6rem !important; } }
+    font-size: 1.4rem !important; } }
 @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
   p, li {
     font-size: 2rem !important; } }
@@ -138,7 +141,8 @@ h2 {
   z-index: 2000 !important;
   line-height: 3.4rem;
   font-weight: 400;
-  margin-bottom: 20px !important; }
+  margin-top: 40px !important;
+  margin-bottom: 40px !important; }
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     h2 {
       font-size: 1.8rem !important; } }
@@ -175,12 +179,14 @@ h3 {
   h4 {
     font-size: 4rem !important; } }
 
-@media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
-  h5 {
-    font-size: 1.5rem !important; } }
-@media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
-  h5 {
-    font-size: 2.2rem !important; } }
+h5 {
+  margin-top: 0 !important; }
+  @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
+    h5 {
+      font-size: 1.5rem !important; } }
+  @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+    h5 {
+      font-size: 2.2rem !important; } }
 
 a {
   color: #121714 !important; }
@@ -208,7 +214,7 @@ hr {
 
 .header-table {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-bottom: 5px;
   list-style: none; }
 
@@ -230,10 +236,9 @@ table.header-table tr td:nth-child(3) {
   width: 40%; }
 
 .top-border {
-  border-top: 1px solid #121714; }
-
-.marg_top {
-  margin-top: 30px; }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #b7b7b7; }
 
 .flex-container {
   width: 100%;
@@ -256,10 +261,10 @@ table.header-table tr td:nth-child(3) {
 
 @media (min-width: 992px) {
   .col-md-border:not(:last-child) {
-    border-right: 1px solid #121714; }
+    border-right: 1px solid #b7b7b7; }
 
   .col-md-border + .col-md-border {
-    border-left: 1px solid #121714;
+    border-left: 1px solid #b7b7b7;
     margin-left: -1px; } }
 .project_target {
   transition: all 0.4s ease-out;
@@ -299,7 +304,7 @@ table.header-table tr td:nth-child(3) {
 
 .photo img {
   height: 40vh;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 .photo video {
   height: 40vh;
@@ -312,7 +317,6 @@ table.header-table tr td:nth-child(3) {
   background-color: #EDE9EC !important; }
 
 h5.highlited {
-  margin-top: 50px;
   margin-bottom: 20px !important;
   color: #FFFAFA !important; }
 
@@ -332,8 +336,8 @@ h5.highlited span {
   .team-img {
     max-width: 150px; } }
 
-.team-descript-name {
-  margin-top: -30px;
+h5.team-descript-name {
+  margin-top: -30px !important;
   margin-right: 30px;
   color: #121714; }
 
@@ -347,10 +351,10 @@ h5.highlited span {
 /* ---------------------------
 --------- news page ----------*/
 .content {
-  margin-top: 30px; }
+  margin-bottom: 50px; }
 
 .page-title {
-  margin-top: 30px; }
+  margin-top: 30px !important; }
 
 /* ------------------------------------
 ------------- carousel --------------*/

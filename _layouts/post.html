@@ -56,7 +56,7 @@ layout: "wrapper"
 
             <h5 class="highlited"><span>{{ post.heading }}</span></h5>
             <p> {{ post.date | date: "%-d-%m-%Y" }}
-            <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+            <h3 class="content"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
 
             {% endfor %}

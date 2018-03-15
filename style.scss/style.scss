@@ -52,11 +52,12 @@ $brk-iphone: '(max-width: 374px)';
 /* Each button */
 .share-button {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   margin-right: 3px;
   border: 1px solid #D3D6D2;
   padding: 5px 10px 5px 10px;
 }
+
 .share-button:hover {
   opacity: 1;
   color: #ffffff;
@@ -66,6 +67,7 @@ $brk-iphone: '(max-width: 374px)';
 .fa-facebook-official {
   color: $color;
 }
+
 .fa-facebook-official:hover {
   background-color: #3b5998;
 }
@@ -75,6 +77,10 @@ $brk-iphone: '(max-width: 374px)';
   color: $color;
 }
 .fa-twitter:hover {
+  background-color: #55acee;
+}
+
+.fa-telegram:hover {
   background-color: #55acee;
 }
 
@@ -107,7 +113,7 @@ body {
   background-color: $base!important;
   color:$main-text!important;
   //font-family: "Bliss Pro", serif !important;
-  font-family: "", serif !important;
+  font-family: "Bliss Pro", sans-serif !important;
 }
 
 #container {
@@ -149,7 +155,7 @@ p, li {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
-    font-size: 1.6rem!important;
+    font-size: 1.4rem!important;
   }
 
   @media #{$brk-narrow},
@@ -212,7 +218,8 @@ h2 {
   z-index: 2000 !important;
   line-height: 3.4rem;
   font-weight: 400;
-  margin-bottom:20px!important;
+  margin-top: 40px!important;
+  margin-bottom: 40px!important;
 
 
   @media #{$brk-xlarge},
@@ -232,6 +239,7 @@ h2 {
 h2 span {
   border: 1px solid $color;
   padding: 5px;
+
 }
 
 .xs-top-margin {
@@ -286,7 +294,7 @@ h4 {
 }
 
 h5 {
-
+  margin-top: 0!important;
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
@@ -336,7 +344,7 @@ hr {
 
 .header-table {
   width:100%;
-  margin-top:5px;
+  margin-top:20px;
   margin-bottom:5px;
   list-style: none;
 }
@@ -364,12 +372,14 @@ table.header-table tr td:nth-child(3){
 }
 
 .top-border {
-  border-top: 1px solid $color;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #b7b7b7;
 }
 
-.marg_top{
-  margin-top: 30px;
-}
+//.marg_top{
+//  margin-top: 30px;
+//}
 
 .flex-container {
   width:100%;
@@ -399,10 +409,10 @@ table.header-table tr td:nth-child(3){
 
 @media (min-width: 992px) {
   .col-md-border:not(:last-child) {
-    border-right: 1px solid $main-text;
+    border-right: 1px solid #b7b7b7;
   }
   .col-md-border + .col-md-border {
-    border-left: 1px solid $main-text;
+    border-left: 1px solid #b7b7b7;
     margin-left: -1px;
   }
 }
@@ -475,7 +485,7 @@ table.header-table tr td:nth-child(3){
 
 .photo img {
   height: 40vh;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .photo video {
@@ -493,7 +503,6 @@ table.header-table tr td:nth-child(3){
 
 
 h5.highlited {
-  margin-top: 50px;
   margin-bottom: 20px!important;
   color:$base!important;
 
@@ -541,8 +550,8 @@ h5.highlited span {
   //margin-top: -20%;
 }
 
-.team-descript-name  {
-  margin-top: -30px;
+h5.team-descript-name  {
+  margin-top: -30px!important;
   margin-right: 30px;
   //margin-bottom: 30px;
   color: $middle;
@@ -563,12 +572,14 @@ h5.highlited span {
 --------- news page ----------*/
 
 .content {
-  margin-top:30px;
+  margin-bottom:50px;
 }
 
 .page-title {
-  margin-top:30px;
+  margin-top:30px!important;
 }
+
+
 
 /* ------------------------------------
 ------------- carousel --------------*/
@@ -645,6 +656,8 @@ h6.about-us {
   font-size: 0.9rem;
 
 }
+
+
 
 
 
