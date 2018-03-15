@@ -71,6 +71,7 @@
             $('.project_target').removeClass('col-md-4').addClass('col-md-8');
             $('.news_target').removeClass('col-md-4').addClass('col-md-2');
             $('.team_target').removeClass('col-md-4').addClass('col-md-2');
+            $('.team').addClass('fa fa-long-arrow-left');
             $('.team-descript').css("display", "none");
             $(".post-lead").css("display", "none");
 
@@ -82,13 +83,55 @@
             $(this).removeClass('fa-long-arrow-left').addClass('fa-long-arrow-right');
             $('.project_target').removeClass('col-md-8').addClass('col-md-4');
             $('.news_target').removeClass('col-md-2').removeClass('col-md-8').addClass('col-md-4');
-            $('.team_target').removeClass('col-md-2').removeClass('col-md-8').addClass('col-md-4');
+            $('.team_target').removeClass('col-md-2').removeClass('col-md-4').addClass('col-md-4');
+            $('.team').removeClass('fa fa-long-arrow-left');
             $('.team-descript').css("display", "block");
             $(".post-lead").css("display", "block");
         });
 
 
-        //make longer
+        //news
+        $('body').on('click', 'i.news.fa.fa-long-arrow-right', function () {
+
+            $(this).removeClass('fa-long-arrow-right').addClass('fa-long-arrow-left');
+            $('.project_target').removeClass('col-md-8').removeClass('col-md-4').addClass('col-md-4');
+            $('.news_target').removeClass('col-md-4').removeClass('col-md-2').addClass('col-md-6');
+            $('.team_target').removeClass('col-md-4').addClass('col-md-2');
+            $('.team').addClass('fa fa-long-arrow-left');
+            $('.team-descript').css("display", "none");
+
+        });
+
+
+        $('body').on('click', 'i.news.fa.fa-long-arrow-left', function () {
+
+            $(this).removeClass('fa-long-arrow-left').addClass('fa-long-arrow-right');
+            $('.project_target').removeClass('col-md-8').addClass('col-md-4');
+            $('.news_target').removeClass('col-md-2').removeClass('col-md-6').addClass('col-md-4');
+            $('.team_target').removeClass('col-md-2').removeClass('col-md-4').addClass('col-md-4');
+            $('.team').removeClass('fa fa-long-arrow-left');
+            $('.team-descript').css("display", "block");
+            $(".post-lead").css("display", "block");
+        });
+
+        //team
+
+        $('body').on('click', 'i.team.fa.fa-long-arrow-left', function () {
+
+            $(this).removeClass('fa-long-arrow-left');
+            $('.fa-long-arrow-left').removeClass('fa-long-arrow-left').addClass('fa-long-arrow-right');
+            $('.project_target').removeClass('col-md-8').removeClass('col-md-4').addClass('col-md-4');
+            $('.news_target').removeClass('col-md-6').removeClass('col-md-2').addClass('col-md-4');
+            $('.team_target').removeClass('col-md-2').removeClass('col-md-4').addClass('col-md-4');
+            $('.team-descript').css("display", "block");
+            $(".post-lead").css("display", "block");
+
+        });
+
+
+
+
+
 
 
 

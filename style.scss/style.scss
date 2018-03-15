@@ -37,7 +37,6 @@ $brk-iphone: '(max-width: 374px)';
   #{$brk-iphone} {
     font-size: 20px!important;
   }
-
 }
 
 /* Title */
@@ -107,7 +106,8 @@ body {
   position: relative;
   background-color: $base!important;
   color:$main-text!important;
-  font-family: "Bliss Pro", serif !important;
+  //font-family: "Bliss Pro", serif !important;
+  font-family: "", serif !important;
 }
 
 #container {
@@ -145,7 +145,7 @@ header {
   background:$color;
 }
 
-p {
+p, li {
   @media #{$brk-xlarge},
   #{$brk-large},
   #{$brk-medium} {
@@ -161,16 +161,18 @@ p {
 
 p.foot {
   font-size: 1.1rem;
-  color:white;
+  color:white!important;
+  border-bottom:1px $base!important;
 }
 
 a.foot {
-  color:white;
-  border-bottom:1px dashed;
+  color:white!important;
+
 }
 
-a.foot:hover{
-  color:$middle;
+a.foot:hover {
+  color:$base!important;
+  border-bottom:1px $base!important;
 }
 
 h1 {
@@ -186,7 +188,7 @@ h1 {
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    //font-size: 4rem!important;
+    font-size: 4.0rem!important;
   }
 }
 
@@ -199,7 +201,7 @@ h1.small {
   @media #{$brk-narrow},
   #{$brk-spnarrow},
   #{$brk-iphone} {
-    font-size: 3rem!important;
+    font-size: 2.5rem!important;
   }
 }
 
@@ -210,6 +212,7 @@ h2 {
   z-index: 2000 !important;
   line-height: 3.4rem;
   font-weight: 400;
+  margin-bottom:20px!important;
 
 
   @media #{$brk-xlarge},
@@ -251,6 +254,7 @@ h2 span {
 
 h3 {
   font-weight: 800;
+  margin-top:0!important;
   color:$middle!important;
 
   @media #{$brk-xlarge},
@@ -302,7 +306,11 @@ a {
 }
 
 a:hover {
-  color:$middle!important;
+  color: $color !important;
+  border-bottom: 1px solid black;
+}
+
+.no-hover {
   text-decoration: none!important;
 }
 
@@ -310,22 +318,6 @@ a:hover {
   background-color: $color;
 }
 
-
-li {
-  color:$main-text;
-}
-
-li:hover{
-  /* hover state */
-}
-
-li:active{
-  /* click state */
-}
-
-li.active{
-  /* after click state */
-}
 
 .responsive {
   max-width:100%
@@ -374,6 +366,10 @@ table.header-table tr td:nth-child(3){
   border-top: 1px solid $color;
 }
 
+.marg_top{
+  margin-top: 30px;
+}
+
 .flex-container {
   width:100%;
   padding: 0;
@@ -410,7 +406,7 @@ table.header-table tr td:nth-child(3){
   }
 }
 
-.project {
+.project_target {
   transition: all 0.4s ease-out;
   border-right: 1px $main-text;
   //background: #feff20;
@@ -423,12 +419,12 @@ table.header-table tr td:nth-child(3){
 }
 
 
-.news {
+.news_target {
   transition: all 0.4s ease-out;
   //background: #d6ff4d;
   }
 
-.team {
+.team_target {
   transition: all 0.4s ease-out;
   //background: #b8ff30;
 
@@ -464,10 +460,10 @@ table.header-table tr td:nth-child(3){
 /* ---------------------------
 --------- projects ----------*/
 .photo {
-  height: 100vh;
+  //height: 100vh;
   position:relative;
-  width: 100%!important;
-  overflow: hidden;
+  //min-width: 100%!important;
+  //overflow: hidden;
 
   @media #{$brk-narrow} and (orientation: portrait),
   #{$brk-spnarrow} and (orientation: portrait),
@@ -476,11 +472,22 @@ table.header-table tr td:nth-child(3){
   }
 }
 
+.photo img {
+  height: 40vh;
+  margin-bottom: 10px;
+}
+
+.photo video {
+  height: 40vh;
+  min-width: 100%!important;
+  overflow: hidden;
+}
+
 
 .butt {
   color:$color!important;
   position:relative;
-  margin-bottom:20px!important;
+  //margin-bottom:20px!important;
   background-color: #EDE9EC !important; }
 
 
@@ -567,11 +574,11 @@ h5.highlited span {
 
 .glyphicon .glyphicon-chevron-right:before {
   content: "▶";
-  color: grey; }
+  color: $base; }
 
 .glyphicon .glyphicon-chevron-left:before {
   content: "◀";
-  color: grey; }
+  color: $base; }
 
 .carousel-indicators li {
   display: inline-block;
@@ -580,7 +587,7 @@ h5.highlited span {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: $color;
+  background-color: $base;
   border: 1px solid $base;
   border-radius: 10px; }
 
@@ -593,6 +600,15 @@ h5.highlited span {
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
   margin-left: 20px!important; }
 
+.carousel-control .glyphicon-chevron-left, .carousel-control
+.glyphicon-chevron-right, .carousel-control .icon-next,
+.carousel-control .icon-prev {
+  position: absolute;
+  top: 150px!important;
+  z-index: 5;
+  display: inline-block;
+}
+
 
 
 a.button {
@@ -602,7 +618,7 @@ a.button {
 
 
   text-decoration: none;
-  color: initial;
+  color:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                initial;
 }
 
 
@@ -690,20 +706,26 @@ svg {
 
 
 ul {
-  list-style-type: none;
+  list-style-type: square;
   padding: 0;
+  margin-left: 20px;
+}
+
+ul.list-style-type-none {
+  list-style-type: none;
+  margin-left: 0;
 }
 
 li.withborder {
-  border: 1px solid #dfe0e2;
-  margin-bottom:10px;
+  //border: 1px solid #dfe0e2;
+  //margin-bottom:10px;
   padding:5px;
   color:$color;
 }
 
 li.withborder:hover {
   background-color: #ecedef;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 /* --------------------------------
@@ -727,7 +749,7 @@ section {
   #{$brk-large},
   #{$brk-medium}
   {
-    padding-top:15vh;
+    padding-top:10vh;
     height: 80vh;
 
   }
