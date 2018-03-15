@@ -1827,12 +1827,12 @@ layout: "wrapper"
 
 
                         <ul class="list-style-type-none">
-                            <li id="first" class="withborder">Аналіз великих баз даних та їх візуалізація</li>
-                            <li id="second" class="withborder">Підготовка ґрунтовних журналістських матеріалів</li>
-                            <li id="third" class="withborder">Створення стрічки новин</li>
-                            <li id="fouth" class="withborder">Лекції і семінари з журналістики даних</li>
+                            <li id="first" class="withborder">Аналітичний центр</li>
+                            <li id="second" class="withborder">Інтернет-видання <b><a class="no-hover" href="texty.org.ua" target="_blank">TEXTY.org.ua</a></b></li>
+
+                            <li id="third" class="withborder">Навчальний напрямок</li>
                         </ul>
-						<!--<img id="backimg" src=""/>-->
+						<p id="backimg"></p>
                     </div>
                 </div>
 
@@ -1853,6 +1853,8 @@ layout: "wrapper"
                             <li class="withborder">Енергетика</li>
                             <li class="withborder">Транспорт</li>
                             <li class="withborder">Зв'язок</li>
+							<li class="withborder">Дослідження пропаганди</li>
+
                         </ul>
 
                     </div>
@@ -2005,24 +2007,26 @@ layout: "wrapper"
 
     $('#first').mouseover(function () {
 //            img.src = "https://cdn-images-1.medium.com/max/1600/0*0asqH3xLM_dml86-.";
-        $('img#backimg').attr("src", "http://uacrisis.org/wp-content/uploads/2018/01/ASS8611.jpg")
-    });
+        $('<i>Розробка якісних аналітичних матеріалів, підготовка полісі-матеріалів для органів влади, аналіз великих масивів даних та створення візуалізацій на їх основі.</i>)').appendTo('p#backimg');
+    }).mouseout(function () {
+		$('p#backimg').empty()
+
+	});
 
     $('#second').mouseover(function () {
-//            img.src = "http://uacrisis.org/wp-content/uploads/2018/01/ASS8611.jpg";
-        $('img#backimg').attr("src", "https://cdn-images-1.medium.com/max/1600/0*0asqH3xLM_dml86-.")
-    });
+      $('<i>Написання статей, наповнення стрічки новин та публікація візуалізацій на основі журналістики даних</i>)').appendTo('p#backimg');
+	}).mouseout(function () {
+		$('p#backimg').empty()
+	});
 
     $('#third').mouseover(function () {
-//        img.src = "http://uacrisis.org/wp-content/uploads/2018/02/ASS1191.jpg";
-        $('img#backimg').attr("src", "http://uacrisis.org/wp-content/uploads/2018/02/ASS1191.jpg")
+		$('<i>Проведення освітніх заходів (тренінгів, семінарів, воркшопів, презентацій, дата-кемпів тощо) для різноманітних цільових аудиторій: держслужбовців, журналістів, активістів, розробників, дата-аналітиків тощо</i>)').appendTo('p#backimg');
+	}).mouseout(function () {
+		$('p#backimg').empty()
+	});
 
-    });
 
-    $('#fouth').mouseover(function () {
-//        img.src = "http://pim.oa.edu.ua/wp-content/uploads/2016/05/Teksty-.jpg";
-        $('img#backimg').attr("src", "{{ site.baseurl }}/assets/img/forth.jpg")
-    });
+
 
 
     var c = document.getElementById("c");

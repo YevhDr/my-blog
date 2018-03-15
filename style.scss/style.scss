@@ -307,6 +307,7 @@ a {
 
 a:hover {
   color: $color !important;
+  text-decoration: none!important;
   border-bottom: 1px solid black;
 }
 
@@ -821,10 +822,8 @@ img {
 }
 
 #backimg {
-  margin-bottom: 10px;
-  //position:absolute;
-  //z-index:1;
-  transition: all 0.3s;
+  margin-top: 40px;
+
 }
 
 

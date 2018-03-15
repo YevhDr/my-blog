@@ -187,6 +187,7 @@ a {
 
 a:hover {
   color: #121714 !important;
+  text-decoration: none !important;
   border-bottom: 1px solid black; }
 
 .no-hover {
@@ -522,8 +523,7 @@ img {
   height: auto; }
 
 #backimg {
-  margin-bottom: 10px;
-  transition: all 0.3s; }
+  margin-top: 40px; }
 
 .report {
   margin-top: 50px; }
