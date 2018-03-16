@@ -130,13 +130,13 @@ h1 {
       font-size: 4rem !important; } }
 
 h1.small {
-  font-size: 1.8rem !important;
+  font-size: 1.7rem !important;
   letter-spacing: 3px;
   margin-bottom: 20px;
   color: #FFFAFA !important; }
   @media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
     h1.small {
-      font-size: 2.5rem !important; } }
+      font-size: 2.4rem !important; } }
 
 h2 {
   color: #121714;
@@ -315,7 +315,8 @@ table.header-table tr td:nth-child(3) {
 .photo video {
   height: 40vh;
   min-width: 100% !important;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 20px; }
 
 .butt {
   color: #121714 !important;
