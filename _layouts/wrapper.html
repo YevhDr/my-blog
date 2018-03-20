@@ -112,7 +112,10 @@
             $('.team').removeClass('fa fa-long-arrow-left');
             $('.team-descript').css("display", "block");
             $(".post-lead").css("display", "block");
+
         });
+
+
 
         //team
 
@@ -128,8 +131,18 @@
 
         });
 
-
         $('#backimg');
+
+
+        $(document).ready(function() {
+            $('.news.fa').on('click', function(event) {
+                if ($(this).hasClass('fa-long-arrow-left')) {
+                    $(this).parent().attr('title', "Розгорнути");
+                } else {
+                    $(this).parent().attr('title', 'Згорнути');
+                }
+            });
+        });
 
 
        $(document).ready(function(){
