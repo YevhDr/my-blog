@@ -12,10 +12,15 @@ layout: wrapper
                         <h2><span>Проекти</span></h2>
                     </div>
                     <div class="col-md-6">
-                        <div class="text">
-                            <!--<i class="project fa fa-long-arrow-right" style="font-size:20px"></i>-->
+                        <div id="fa-list" class="text" title="Список">
+                            <i id="hideshow" class="fa fa-list" style="font-size:20px"></i>
 
                         </div>
+
+                        <!--<div id="fa-images" class="text" title="Слайдер">-->
+                            <!--<i id="hideshow" class="fa fa-images" style="font-size:20px"></i>-->
+
+                        <!--</div>-->
                     </div>
                 </div>
 
@@ -36,7 +41,8 @@ layout: wrapper
                         <div class="item active">
                             <div class="photo">
                                 <img class="carousel" src="{{ site.baseurl }}/assets/img/projects/svydovec2.gif"/>
-                                <h3><span><a class="no-hover" href="http://texty.org.ua/d/carpathians-3d/" target="_blank">Cвидовець. Анатомія Карпат</a></span></h3>
+                                <h3><span><a class="no-hover" href="http://texty.org.ua/d/carpathians-3d/"
+                                             target="_blank">Cвидовець. Анатомія Карпат</a></span></h3>
                                 <p>Розповідь про те, як влаштовані Карпати. Про вирубки, напівлегальні туристичні бази,
                                     полонини, скелі та едельвейси, проблеми гірського району та його перспективи.</p>
                                 <a type="button" href="http://texty.org.ua/d/carpathians-3d/" target="_blank"
@@ -71,12 +77,13 @@ layout: wrapper
                             <div class="photo">
                                 <img class="carousel"
                                      src="{{ site.baseurl }}/assets/img/projects/kyiv-buildings.png"/>
-                                <h3><span><a class="no-hover" href="http://texty.org.ua/d/buildings-kyiv/#17/50.46504/30.52256"
+                                <h3><span><a class="no-hover"
+                                             href="http://texty.org.ua/d/buildings-kyiv/#17/50.46504/30.52256"
                                              target="_blank">Київські розвалини. Інтерактивна карта покинутих будівель Києва</a></span>
                                 </h3>
                                 <p>Розбиті вікна, покалічені, але міцні стіни, закутані у традиційний зелений паркан.
                                     Декілька секунд стою нерухомо і змушую себе пробратись через поламану огорожу і
-                                    зайти в середину </p>
+                                    зайти в середину.</p>
 
                                 <a type="button" href="http://texty.org.ua/d/buildings-kyiv/#17/50.46504/30.52256"
                                    target="_blank" class="btn btn-link butt">Перейти до проекту</a>
@@ -131,7 +138,7 @@ layout: wrapper
                                 <img style="width:100%" src="{{ site.baseurl }}/assets/img/projects/head-socio.png"/>
                                 <h3><span>Продавці рейтингів.База псевдосоціологів</span></h3>
                                 <p>ТЕКСТИ зібрали дані про 80 псевдосоціологічних служб та 88 осіб, які оприлюднювали
-                                    сумнівні результати протягом останніх 15 років. </p>
+                                    сумнівні результати протягом останніх 15 років.</p>
                                 <a type="button" href="http://texty.org.ua/d/socio/index.html" target="_blank"
                                    class="btn btn-link butt">Перейти до проекту</a>
 
@@ -199,9 +206,7 @@ layout: wrapper
 
                                 <img style="width:100%" src="{{ site.baseurl }}/assets/img/projects/che-zno.png"/>
                                 <h3><span>На околицях навчають гірше. Як чернівецькі школярі складають ЗНО</span></h3>
-                                <p>Чи достатньо накопичено запасів на зиму, чи очікувати відключення електроенергії та
-                                    купувати буржуйки і дрова? Наш онлайн-інструмент показує щоденний стан справ на
-                                    складах ТЕЦ і ТЕС.</p>
+                                <p>Учні, що навчаються ближче до центру Чернівців, складають ЗНО краще, ніж учні з околиць. Які ще фактори впливають на їхній результат? Озброївшись даними про фінансування шкіл та статистикою, яку збирає міське управління освіти, ми вирушили на пошуки відповідей на це питання.</p>
                                 <a type="button" href="http://texty.org.ua/d/che_zno/" target="_blank"
                                    class="btn btn-link butt">Перейти до проекту</a>
 
@@ -220,7 +225,7 @@ layout: wrapper
                             </div>
                         </div>
 
-
+                        <!---three days-->
                         <div class="item">
                             <div class="photo">
                                 <video autoplay loop="true">
@@ -240,7 +245,7 @@ layout: wrapper
                             </div>
                         </div>
 
-
+                        <!---pension game-->
                         <div class="item">
                             <div class="photo">
                                 <img style="width:100%" src="{{ site.baseurl }}/assets/img/projects/pension.png"/>
@@ -268,6 +273,94 @@ layout: wrapper
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                </div> <!-- end of carousel -->
+
+                <div id="list">
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/carpathians-3d/" target="_blank">Cвидовець.
+                        Анатомія Карпат</a></h3>
+                    <p class="content">Розповідь про те, як влаштовані Карпати. Про вирубки, напівлегальні туристичні
+                        бази, полонини, скелі та едельвейси, проблеми гірського району та його перспективи.</p>
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/fb-trolls/" target="_blank">Тролесфера</a>
+                    </h3>
+                    <p class="content">«Тексти» вирахували мережу з близько 2 тисяч користувачів Фейсбуку, яка тісно
+                        пов’язана із групами бойовика ДНР Степана Мазури. Це мережа з публічних груп та
+                        користувачів, які, прикриваючись патріотичними слоганами, поширювали заклики до
+                        перевороту та протестів.</p>
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/buildings-kyiv/#17/50.46504/30.52256" target="_blank">Київські розвалини. Інтерактивна карта покинутих будівель Києва</a></h3>
+                    <p class="content">Розбиті вікна, покалічені, але міцні стіни, закутані у традиційний зелений паркан.
+                        Декілька секунд стою нерухомо і змушую себе пробратись через поламану огорожу і
+                        зайти в середину.</p>
+
+
+                    <h3 class="withborder"><a href="http://z.texty.org.ua/" target="_blank">Zакупівлі 2.0</a></h3>
+                    <p class="content">Аналіз сотень тисяч «протоколів розкриття цінових пропозицій» у Віснику державних
+                        закупівель дав змогу вирахувати три класичні схеми, які застосовувалися, щоб
+                        вигравати тендери до 2015 року. Принаймні один із цих старих методів
+                        використовується і зараз.</p>
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/uz/" target="_blank">Громадяни пасажири</a>
+                    </h3>
+                    <p class="content">Як, куди і скільки їздили українці міжміським сполученням «Укрзалізниці» у 2014-2015
+                        рр.</p>
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/socio/index.html" target="_blank">Продавці
+                        рейтингів.База псевдосоціологів</a></h3>
+                    <p class="content">ТЕКСТИ зібрали дані про 80 псевдосоціологічних служб та 88 осіб, які оприлюднювали
+                        сумнівні результати протягом останніх 15 років.</p>
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/longs/dnipro2/" target="_blank">Вкрадений
+                        Дніпро. Як киян позбавили доступу до ріки</a></h3>
+                    <p class="content">У Києві лише 15% берегів Дніпра доступні містянам для прогулянок чи купання в річці.
+                        Все інше — це чагарники, паркани, дороги, промзони.
+
+
+                    <h3 class="withborder"><a href="http://avia.texty.org.ua/" target="_blank">Зліт дозволено</a></h3>
+                    <p class="content">Проект являє собою інтерактивний он-лайн інструмент, в якому зібрана інформація про
+                        надані права на міжнародні рейси, умови міжнародних угод про повітряне сполучення,
+                        дані розкладів деяких авіакомпаній.</p>
+
+
+
+                    <h3 class="withborder"><a href="http://coal.texty.org.ua/" target="_blank">Зима близько. Стеж за
+                        запасами вугілля</a></h3>
+                    <p class="content">Чи достатньо накопичено запасів на зиму, чи очікувати відключення електроенергії та
+                        купувати буржуйки і дрова? Наш онлайн-інструмент показує щоденний стан справ на
+                        складах ТЕЦ і ТЕС.</p>
+
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/che_zno/" target="_blank">На околицях навчають
+                        гірше. Як чернівецькі школярі складають ЗНО</a></h3>
+                    <p class="content">Учні, що навчаються ближче до центру Чернівців, складають ЗНО краще, ніж учні з околиць. Які ще фактори впливають на їхній результат? Озброївшись даними про фінансування шкіл та статистикою, яку збирає міське управління освіти, ми вирушили на пошуки відповідей на це питання.</p>
+
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/varta_vin/" target="_blank">Вінниця
+                        комунальна</a></h3>
+                    <p class="content">Як швидко міські служби Вінниці реагують на телефонні звернення</p>
+
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/maidan_maps/" target="_blank">Три дні перед
+                        весною</a></h3>
+                    <p class="content">Хто, коли і де загинув на Майдані 18–20 лютого 2014 року.</p>
+
+
+
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/pension-game/#" target="_blank">Признач собі
+                        пенсію</a></h3>
+                    <p class="content">І перевір, чи держава зможе її виплатити. Ключовий показник — розмір «дірки» у
+                        бюджеті Пенсійного фонду.</p>
+
+
                 </div>
 
 
@@ -282,7 +375,7 @@ layout: wrapper
                         <h2 class="xs-top-margin"><span>Новини</span></h2>
                     </div>
                     <div class="col-md-6">
-                        <div class="text">
+                        <div class="text" title="Розгорнути">
                             <i class="news fa fa-long-arrow-right" style="font-size:20px"></i>
                         </div>
                     </div>
@@ -381,11 +474,13 @@ layout: wrapper
                         <tbody>
                         <tr>
                             <td>
-                                <img style="margin-top:-40px!important;" class="team-img" src="{{ site.baseurl }}/assets/img/roman.png"/>
+                                <img style="margin-top:-40px!important;" class="team-img"
+                                     src="{{ site.baseurl }}/assets/img/roman.png"/>
 
                             </td>
                             <td>
-                                <p class="team-descript" style="margin-top:-40px!important;">Виконавчий директор ГО «Агенція журналістики даних», головний
+                                <p class="team-descript" style="margin-top:-40px!important;">Виконавчий директор ГО
+                                    «Агенція журналістики даних», головний
                                     редактор ТЕКСТІВ. Цінує хороші тексти і вчасні дедлайни.</p>
                             </td>
                         </tr>

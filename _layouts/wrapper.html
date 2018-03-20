@@ -129,17 +129,25 @@
         });
 
 
-        $('#backimg')
+        $('#backimg');
 
 
-
-
-
-
-
-
-
+       $(document).ready(function(){
+            $('#hideshow').on('click', function(event) {
+                $('#carousel-example-generic').toggle('show');
+                $('#list').toggle('hide');
+                $(this).toggleClass('fa-list fa-image');
+                if($(this).hasClass('fa-list')){
+                    $(this).attr('title',"Список");
+                }else{
+                    $(this).attr('title','Слайдер');
+                }
+            });
+        });
+//fa-images
     </script>
+
+
     <script>
         jQuery('li').click(function () {
             jQuery(this).toggleClass('active');

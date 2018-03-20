@@ -540,4 +540,17 @@ img {
 .report {
   margin-top: 50px; }
 
+.fa-long-arrow-left {
+  margin-top: 20px !important; }
+
+.fa-long-arrow-right {
+  margin-top: 20px !important; }
+
+.fa-list,
+.fa-image {
+  margin-top: 20px !important; }
+
+#list {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
