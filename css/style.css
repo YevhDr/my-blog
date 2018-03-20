@@ -419,7 +419,7 @@ h6.about-us {
   letter-spacing: 5px; }
 
 .text {
-  margin-top: 15px !important;
+  margin-top: 15px;
   font-style: italic;
   color: #121714;
   text-align: right;
@@ -540,15 +540,18 @@ img {
 .report {
   margin-top: 50px; }
 
-.fa-long-arrow-left {
-  margin-top: 20px !important; }
-
+.fa-list,
+.fa-image,
+.fa-long-arrow-left,
 .fa-long-arrow-right {
   margin-top: 20px !important; }
 
-.fa-list,
-.fa-image {
-  margin-top: 20px !important; }
+@media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
+  .fa {
+    font-size: 20px; } }
+@media (max-width: 1024px), (max-width: 767px), (max-width: 374px) {
+  .fa {
+    font-size: 30px !important; } }
 
 #list {
   display: none; }

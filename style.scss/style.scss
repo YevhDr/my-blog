@@ -660,7 +660,7 @@ h6.about-us {
 
 
 .text {
-  margin-top: 15px!important;
+  margin-top: 15px;
   font-style: italic;
   color:$middle;
   text-align: right;
@@ -858,17 +858,28 @@ img {
   margin-top:50px;
 }
 
-.fa-long-arrow-left  {
-  margin-top:20px!important;
-}
-
-.fa-long-arrow-right {
-  margin-top:20px!important;
-}
 
 .fa-list,
-.fa-image {
-  margin-top:20px!important;
+.fa-image,
+.fa-long-arrow-left,
+.fa-long-arrow-right {
+    margin-top:20px!important;
+}
+
+.fa {
+
+  @media #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    font-size:20px;
+  }
+
+  @media #{$brk-narrow},
+  #{$brk-spnarrow},
+  #{$brk-iphone} {
+    font-size:30px!important;
+  }
+
 }
 
 #list {
