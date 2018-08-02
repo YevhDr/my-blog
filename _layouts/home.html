@@ -3,24 +3,23 @@ layout: wrapper
 ---
 
 <div class="container-fluid">
-    <div class="row top-border">
-        <div class="project_target col-md-4 col-md-border">
+    <div class="row top-border m-b-20 m-t-20">
+        <div class="project_target col-xs-offset-2 col-xs-8 col-md-offset-0 col-md-4 col-md-border">
             <div class="padding">
 
                 <div class="row">
                     <div class="col-xs-8 col-md-6">
-                        <h2><span>Проекти</span></h2>
+                        <h2 class="subtitle m-t-40 m-b-40"><span>Проекти</span></h2>
                     </div>
-                    <div class="col-xs-3 col-md-6">
-                        <div id="fa-list" class="text" title="Список">
-                            <i id="hideshow" class="fa fa-list"></i>
-
-                        </div>
-
-                        <!--<div id="fa-images" class="text" title="Слайдер">-->
-                            <!--<i id="hideshow" class="fa fa-images" style="font-size:20px"></i>-->
+                    <div class="col-xs-4 col-md-6">
+                        <!--<div id="fa-list" class="text" title="Список">-->
+                            <!--<i id="hideshow" class="fa fa-list"></i>-->
+                            <img id="hideshow" class="fa-list" title="подивитись всі проекти" style="width:30px; height:30px; margin-top: 40px; float:right; " src="{{ site.baseurl }}/assets/img/list.svg"/>
 
                         <!--</div>-->
+
+
+
                     </div>
                 </div>
 
@@ -37,8 +36,42 @@ layout: wrapper
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
 
-                        <!---Carpathians-->
+
+                        <!---Leprosy-->
                         <div class="item active">
+                            <div class="photo">
+                                <img class="carousel" src="{{ site.baseurl }}/assets/img/projects/leprosy.jpg"/>
+                                <h3><span><a class="no-hover" href="http://texty.org.ua/d/carpathians-3d/"
+                                             target="_blank">Земляна проказа</a></span></h3>
+                                <p>За допомогою волонтерів та комп'ютерної моделіми визначили на супутникових знімках масштаби видобутку бурштину за останні роки.</p>
+                                <a type="button" href="http://texty.org.ua/d/2018/amber/" target="_blank"
+                                   class="btn btn-link butt">Перейти до проекту</a>
+
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+                        <!---Rivers-->
+                        <div class="item">
+                            <div class="photo">
+                                <img class="carousel" src="{{ site.baseurl }}/assets/img/projects/water.png"/>
+                                <h3><span><a class="no-hover" href="http://texty.org.ua/d/carpathians-3d/"
+                                             target="_blank">Чиста вода</a></span></h3>
+                                <p>Інтерактивна карта забрудненості річок в Україні на основі даних Державного агентства водних ресурсів.</p>
+                                <a type="button" href="http://texty.org.ua/water/" target="_blank"
+                                   class="btn btn-link butt">Перейти до проекту</a>
+
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+
+
+
+                        <!---Carpathians-->
+                        <div class="item">
                             <div class="photo">
                                 <img class="carousel" src="{{ site.baseurl }}/assets/img/projects/svydovec2.gif"/>
                                 <h3><span><a class="no-hover" href="http://texty.org.ua/d/carpathians-3d/"
@@ -59,7 +92,7 @@ layout: wrapper
                             <div class="photo">
                                 <img class="carousel" src="{{ site.baseurl }}/assets/img/projects/trolls.jpg"/>
                                 <h3><span>Тролесфера</span></h3>
-                                <p>«Тексти» вирахували мережу з близько 2 тисяч користувачів Фейсбуку, яка тісно
+                                <p>Наші аналітики вирахували мережу з близько 2 тисяч користувачів Фейсбуку, яка тісно
                                     пов’язана із групами бойовика ДНР Степана Мазури. Це мережа з публічних груп та
                                     користувачів, які, прикриваючись патріотичними слоганами, поширювали заклики до
                                     перевороту та протестів.</p>
@@ -137,7 +170,7 @@ layout: wrapper
 
                                 <img style="width:100%" src="{{ site.baseurl }}/assets/img/projects/head-socio.png"/>
                                 <h3><span>Продавці рейтингів.База псевдосоціологів</span></h3>
-                                <p>ТЕКСТИ зібрали дані про 80 псевдосоціологічних служб та 88 осіб, які оприлюднювали
+                                <p>Ми зібрали дані про 80 псевдосоціологічних служб та 88 осіб, які оприлюднювали
                                     сумнівні результати протягом останніх 15 років.</p>
                                 <a type="button" href="http://texty.org.ua/d/socio/index.html" target="_blank"
                                    class="btn btn-link butt">Перейти до проекту</a>
@@ -206,7 +239,8 @@ layout: wrapper
 
                                 <img style="width:100%" src="{{ site.baseurl }}/assets/img/projects/che-zno.png"/>
                                 <h3><span>На околицях навчають гірше. Як чернівецькі школярі складають ЗНО</span></h3>
-                                <p>Учні, що навчаються ближче до центру Чернівців, складають ЗНО краще, ніж учні з околиць. Які ще фактори впливають на їхній результат? </p>
+                                <p>Учні, що навчаються ближче до центру Чернівців, складають ЗНО краще, ніж учні з
+                                    околиць. Які ще фактори впливають на їхній результат? </p>
                                 <a type="button" href="http://texty.org.ua/d/che_zno/" target="_blank"
                                    class="btn btn-link butt">Перейти до проекту</a>
 
@@ -279,26 +313,29 @@ layout: wrapper
 
                     <h3 class="withborder"><a href="http://texty.org.ua/d/carpathians-3d/" target="_blank">Cвидовець.
                         Анатомія Карпат</a></h3>
-                    <p class="content">Розповідь про те, як влаштовані Карпати. Про вирубки, напівлегальні туристичні
+                    <p class="m-b-50">Розповідь про те, як влаштовані Карпати. Про вирубки, напівлегальні туристичні
                         бази, полонини, скелі та едельвейси, проблеми гірського району та його перспективи.</p>
 
 
                     <h3 class="withborder"><a href="http://texty.org.ua/d/fb-trolls/" target="_blank">Тролесфера</a>
                     </h3>
-                    <p class="content">«Тексти» вирахували мережу з близько 2 тисяч користувачів Фейсбуку, яка тісно
+                    <p class="m-b-50">Ми вирахували мережу з близько 2 тисяч користувачів Фейсбуку, яка тісно
                         пов’язана із групами бойовика ДНР Степана Мазури. Це мережа з публічних груп та
                         користувачів, які, прикриваючись патріотичними слоганами, поширювали заклики до
                         перевороту та протестів.</p>
 
 
-                    <h3 class="withborder"><a href="http://texty.org.ua/d/buildings-kyiv/#17/50.46504/30.52256" target="_blank">Київські розвалини. Інтерактивна карта покинутих будівель Києва</a></h3>
-                    <p class="content">Розбиті вікна, покалічені, але міцні стіни, закутані у традиційний зелений паркан.
+                    <h3 class="withborder"><a href="http://texty.org.ua/d/buildings-kyiv/#17/50.46504/30.52256"
+                                              target="_blank">Київські розвалини. Інтерактивна карта покинутих будівель
+                        Києва</a></h3>
+                    <p class="m-b-50">Розбиті вікна, покалічені, але міцні стіни, закутані у традиційний зелений
+                        паркан.
                         Декілька секунд стою нерухомо і змушую себе пробратись через поламану огорожу і
                         зайти в середину.</p>
 
 
                     <h3 class="withborder"><a href="http://z.texty.org.ua/" target="_blank">Zакупівлі 2.0</a></h3>
-                    <p class="content">Аналіз сотень тисяч «протоколів розкриття цінових пропозицій» у Віснику державних
+                    <p class="m-b-50">Аналіз сотень тисяч «протоколів розкриття цінових пропозицій» у Віснику державних
                         закупівель дав змогу вирахувати три класичні схеми, які застосовувалися, щоб
                         вигравати тендери до 2015 року. Принаймні один із цих старих методів
                         використовується і зараз.</p>
@@ -306,58 +343,59 @@ layout: wrapper
 
                     <h3 class="withborder"><a href="http://texty.org.ua/d/uz/" target="_blank">Громадяни пасажири</a>
                     </h3>
-                    <p class="content">Як, куди і скільки їздили українці міжміським сполученням «Укрзалізниці» у 2014-2015
+                    <p class="m-b-50">Як, куди і скільки їздили українці міжміським сполученням «Укрзалізниці» у
+                        2014-2015
                         рр.</p>
 
 
                     <h3 class="withborder"><a href="http://texty.org.ua/d/socio/index.html" target="_blank">Продавці
                         рейтингів.База псевдосоціологів</a></h3>
-                    <p class="content">ТЕКСТИ зібрали дані про 80 псевдосоціологічних служб та 88 осіб, які оприлюднювали
+                    <p class="m-b-50">Ми зібрали дані про 80 псевдосоціологічних служб та 88 осіб, які
+                        оприлюднювали
                         сумнівні результати протягом останніх 15 років.</p>
 
 
                     <h3 class="withborder"><a href="http://texty.org.ua/d/longs/dnipro2/" target="_blank">Вкрадений
                         Дніпро. Як киян позбавили доступу до ріки</a></h3>
-                    <p class="content">У Києві лише 15% берегів Дніпра доступні містянам для прогулянок чи купання в річці.
+                    <p class="m-b-50">У Києві лише 15% берегів Дніпра доступні містянам для прогулянок чи купання в
+                        річці.
                         Все інше — це чагарники, паркани, дороги, промзони.
 
 
                     <h3 class="withborder"><a href="http://avia.texty.org.ua/" target="_blank">Зліт дозволено</a></h3>
-                    <p class="content">Проект являє собою інтерактивний он-лайн інструмент, в якому зібрана інформація про
+                    <p class="m-b-50">Проект являє собою інтерактивний он-лайн інструмент, в якому зібрана інформація
+                        про
                         надані права на міжнародні рейси, умови міжнародних угод про повітряне сполучення,
                         дані розкладів деяких авіакомпаній.</p>
 
 
-
                     <h3 class="withborder"><a href="http://coal.texty.org.ua/" target="_blank">Зима близько. Стеж за
                         запасами вугілля</a></h3>
-                    <p class="content">Чи достатньо накопичено запасів на зиму, чи очікувати відключення електроенергії та
+                    <p class="m-b-50">Чи достатньо накопичено запасів на зиму, чи очікувати відключення електроенергії
+                        та
                         купувати буржуйки і дрова? Наш онлайн-інструмент показує щоденний стан справ на
                         складах ТЕЦ і ТЕС.</p>
 
 
-
                     <h3 class="withborder"><a href="http://texty.org.ua/d/che_zno/" target="_blank">На околицях навчають
                         гірше. Як чернівецькі школярі складають ЗНО</a></h3>
-                    <p class="content">Учні, що навчаються ближче до центру Чернівців, складають ЗНО краще, ніж учні з околиць. Які ще фактори впливають на їхній результат?</p>
-
+                    <p class="m-b-50">Учні, що навчаються ближче до центру Чернівців, складають ЗНО краще, ніж учні з
+                        околиць. Які ще фактори впливають на їхній результат?</p>
 
 
                     <h3 class="withborder"><a href="http://texty.org.ua/d/varta_vin/" target="_blank">Вінниця
                         комунальна</a></h3>
-                    <p class="content">Як швидко міські служби Вінниці реагують на телефонні звернення</p>
-
+                    <p class="m-b-50">Як швидко міські служби Вінниці реагують на телефонні звернення</p>
 
 
                     <h3 class="withborder"><a href="http://texty.org.ua/d/maidan_maps/" target="_blank">Три дні перед
                         весною</a></h3>
-                    <p class="content">Хто, коли і де загинув на Майдані 18–20 лютого 2014 року.</p>
-
+                    <p class="m-b-50">Хто, коли і де загинув на Майдані 18–20 лютого 2014 року.</p>
 
 
                     <h3 class="withborder"><a href="http://texty.org.ua/d/pension-game/#" target="_blank">Признач собі
                         пенсію</a></h3>
-                    <p class="content">І перевір, чи держава зможе її виплатити. Ключовий показник — розмір «дірки» у
+                    <p class="m-b-50">І перевір, чи держава зможе її виплатити. Ключовий показник — розмір «дірки» у
                         бюджеті Пенсійного фонду.</p>
 
 
@@ -368,16 +406,17 @@ layout: wrapper
         </div>
 
 
-        <div class="news_target col-md-4 col-md-border">
+        <div class="news_target col-xs-offset-2 col-xs-8 col-md-offset-0 col-md-4 col-md-border">
             <div class="padding">
                 <div class="row">
                     <div class="col-xs-8 col-md-6">
-                        <h2 class="xs-top-margin"><span>Новини</span></h2>
+                        <h2 class="xs-top-margin subtitle m-t-40 m-b-40"><span>Новини</span></h2>
                     </div>
                     <div class="col-xs-3 col-md-6">
-                        <div class="xs-top-margin text" title="Розгорнути">
-                            <i class="news fa fa-long-arrow-right"></i>
-                        </div>
+                        <!--<div class="xs-top-margin text" title="Розгорнути">-->
+                            <!--<i class="news fa fa-long-arrow-right"></i>-->
+                            <img class="news arrow-left m-t-40" style="width:30px; height:30px; transform: rotate(180deg); float:right" title='Розгорнути' src="https://cafejavas.co.ug/wp-content/uploads/2017/10/angle_left1600.png"/>
+                        <!--</div>-->
                     </div>
                 </div>
                 {% for post in paginator.posts %}
@@ -389,37 +428,23 @@ layout: wrapper
                 <p class="post-lead"> {{ post.lead }} </p>
 
                 <!--social icons-->
-                <div id="share-bar">
+                <div id="share-bar m-b-10">
 
                     <div class="share-buttons">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ post.url }}"
-                           onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                           title="Share on Facebook">
-                            <i class="fa fa-facebook-official share-button"></i>
+                        <a style='text-decoration:none;'
+                           type="icon_link"
+                           onClick="window.open('http://www.facebook.com/sharer.php?s=100&p[title]={{ post.title }}&p[summary]={{ post.lead }}&p[url]=http://texty.org.ua/dja{{ post.url }}&p[images][0]={{ post.image }}',  'sharer', 'toolbar=0,status=0,width=580,height=325');"
+                           href="javascript: void(0)" title="Поділитись"><i
+                                class="fa fa-facebook-official share-button m-b-70 m-r-3 p-t-5 p-r-10 p-b-5 p-l-10"></i>
                         </a>
 
-                        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.baseurl }}{{ post.url }}"
+                        <a href="https://twitter.com/intent/tweet?text=http://texty.org.ua/dja{{ post.url }}"
                            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                           title="Share on Twitter">
-                            <i class="fa fa-twitter share-button"></i>
+                           title="Поділитись">
+                            <i class="fa fa-twitter share-button m-b-70 m-r-3 p-t-5 p-r-10 p-b-5 p-l-10"></i>
                         </a>
-
-                        <!--<a href="https://plus.google.com/share?url={{ site.baseurl }}{{ post.url }}"-->
-                        <!--onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"-->
-                        <!--title="Share on Google+">-->
-                        <!--<i class="fa fa-google-plus share-button"> google</i>-->
-                        <!--</a>-->
-
-                        <!--<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.baseurl }}{{ post.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"-->
-                        <!--onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"-->
-                        <!--title="Share on LinkedIn">-->
-                        <!--<i class="fa fa-linkedin share-button"> linkedin</i>-->
-                        <!--</a>-->
-
-
                     </div>
-
-                </div><!--end of social icons-->
+                </div>
 
                 {% endfor %}
 
@@ -428,16 +453,17 @@ layout: wrapper
                 <div class="pagination">
                     {% if paginator.previous_page %}
                     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;
-                        Prev</a>
+                        Попередня</a>
                     {% else %}
-                    <span>&laquo; Попередня</span>
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"></a>
+                    <span></span>
                     {% endif %}
 
                     {% for page in (1..paginator.total_pages) %}
                     {% if page == paginator.page %}
                     <span class="webjeda">{{ page }}</span>
                     {% elsif page == 1 %}
-                    <a href="/">{{ page }}</a>
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
                     {% else %}
                     <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
                         page }}</a>
@@ -447,25 +473,23 @@ layout: wrapper
                     {% if paginator.next_page %}
                     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Наступна &raquo;</a>
                     {% else %}
-                    <span>Next &raquo;</span>
+                    <span></span>
                     {% endif %}
-                </div>
-                {% endif %}
 
+                {% endif %}
+                </div>
             </div>
         </div>
 
 
-        <div class="team_target col-md-4">
+        <div class="team_target col-xs-offset-2 col-xs-8 col-md-offset-0 col-md-4">
             <div class="padding">
                 <div class="row">
                     <div class="col-xs-8 col-md-6">
-                        <h2 class="xs-top-margin"><span>Команда</span></h2>
+                        <h2 class="xs-top-margin subtitle m-t-40 m-b-40"><span>Команда</span></h2>
                     </div>
-                    <div class="col-xs-3 col-md-6">
-                        <div class="text">
-                            <i class="team" style="font-size:20px"></i>
-                        </div>
+                    <div class="col-xs-4 col-md-6">
+                        <img class="team arrow-left" style="width:30px; height:30px; margin-top: 40px; display:none; float:right" title='Розгорнути' src="https://cafejavas.co.ug/wp-content/uploads/2017/10/angle_left1600.png"/>
                     </div>
                 </div>
 
@@ -479,9 +503,7 @@ layout: wrapper
 
                             </td>
                             <td>
-                                <p class="team-descript" style="margin-top:-40px!important;">Виконавчий директор ГО
-                                    «Агенція журналістики даних», головний
-                                    редактор ТЕКСТІВ. Цінує хороші тексти і вчасні дедлайни.</p>
+                                <p class="team-descript" style="margin-top:-40px!important;">Виконавчий директор ГО «Агенція журналістики даних». Цінує хороші тексти і вчасні дедлайни.</p>
                             </td>
                         </tr>
                         <tr>
@@ -502,9 +524,7 @@ layout: wrapper
                                 <img class="team-img" src="{{ site.baseurl }}/assets/img/tolik.png"/>
                             </td>
                             <td>
-                                <p class="team-descript"> Заступник головного редактора, керівник напрямку журналістики
-                                    даних та інфографіки. Учасник журі на світовому конкурсі з інфографіки
-                                    "Малофей-22"(2014 рік.) </p>
+                                <p class="team-descript"> Заступник виконавчого директора, керівник напрямку журналістики даних та інфографіки. Учасник журі на світовому конкурсі з інфографіки "Малофей-22"(2014 рік)</p>
                             </td>
                         </tr>
                         <tr>
@@ -524,7 +544,8 @@ layout: wrapper
                                 <img class="team-img" src="{{ site.baseurl }}/assets/img/galyna.png"/>
                             </td>
                             <td>
-                                <p class="team-descript">Заступник виконавчого директора. Керівник проектів. Відповідає за організаційний розвиток та роботу з донорами. Має досвід роботи в бізнесі.
+                                <p class="team-descript">Заступник виконавчого директора. Керівник проектів. Відповідає
+                                    за організаційний розвиток та роботу з донорами. Має досвід роботи в бізнесі.
                             </td>
                         </tr>
                         <tr>
@@ -535,8 +556,6 @@ layout: wrapper
                         </tr>
                         </tbody>
                     </table> <!--end of Galyna-->
-
-
 
 
                     <table>
@@ -613,7 +632,7 @@ layout: wrapper
                                 <img class="team-img" src="{{ site.baseurl }}/assets/img/kelm.png"/>
                             </td>
                             <td>
-                                <p class="team-descript">Дизайнер, працює з векторною і растровою графікою, картами,
+                                <p class="team-descript">Дизайнерка, працює з векторною і растровою графікою, картами,
                                     супутниковими знімками, створює 3d-моделі місцевостей.
                             </td>
                         </tr>
@@ -655,7 +674,7 @@ layout: wrapper
                                 <img class="team-img" src="{{ site.baseurl }}/assets/img/tymoshuk.png"/>
                             </td>
                             <td>
-                                <p class="team-descript">Журналіст
+                                <p class="team-descript">Журналіст.
                             </td>
                         </tr>
                         <tr>
@@ -675,7 +694,8 @@ layout: wrapper
                                 <img class="team-img" src="{{ site.baseurl }}/assets/img/tymoshenko.png"/>
                             </td>
                             <td>
-                                <p class="team-descript">Відповідальна за SMM. Веде сторінки організації в соціальних мережах.
+                                <p class="team-descript">Відповідальна за SMM. Веде сторінки організації в соціальних
+                                    мережах.
                             </td>
                         </tr>
                         <tr>
