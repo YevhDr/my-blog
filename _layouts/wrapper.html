@@ -12,19 +12,19 @@
           content="{{ page.title }}"/>
     <meta property="og:image" content=""/>
     <meta property="og:description"
-          content="{{ post.heading }}"/>
-    <meta property="og:url" content="{{ site.url }}/{{ post.url }}"/>
+          content="{{ page.lead }}"/>
+    <meta property="og:url" content="{{ site.url }}{{ post.url }}"/>
 
     <!-- Twitter Card Meta Tags -->
     <!--треба замінити твітер еканут-->
     <meta name="twitter:site" content=""/>
     <meta property="twitter:account_id" content="49572937"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:url" content="{{ site.url }}/{{ post.url }}"/>
+    <meta name="twitter:url" content="{{ site.url }}{{ post.url }}"/>
     <meta name="twitter:title"
           content="{{ page.title }}"/>
     <meta name="twitter:description"
-          content="{{ post.heading }}"/>
+          content="{{ page.lead }}"/>
     <meta name="twitter:image:src" content=""/>
     <meta name="twitter:image:width" content="1200"/>
     <meta name="twitter:image:height" content="630"/>
@@ -32,7 +32,7 @@
     <!-- Other Meta Tags -->
     <meta name="title" content="{{ page.title }}">
     <meta name="description"
-          content="{{ post.heading }}">
+          content="{{ page.lead }}">
 
     <!-- Links -->
     <link href="{{ site.baseurl }}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
