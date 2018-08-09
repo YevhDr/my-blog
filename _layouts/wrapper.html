@@ -47,7 +47,23 @@
     <script src="https://d3js.org/d3.v3.min.js"></script>
 </head>
 <body>
+<script>
 
+//заміна мета-інфо для НЕ новин
+var content = document.querySelector("meta[property='og:description']").getAttribute("content");
+    if(content.length === 0)  {
+
+      console.log("main page");
+      $("meta[property='og:description']").attr("content", "Сприяти прозорості влади шляхом розвитку якісної журналістики та журналістики даних, яка передбачає аналіз і подачу у цікавій та зрозумілій формі великі масиви даних. ");
+      $("meta[property='og:title']").attr("content", "Агенція журналістики даних");
+      $("meta[property='og:image']").attr("content", "/assets/img/projects/1.jpg")
+     }
+    else {
+
+        console.log("news");
+    }
+
+</script>
 
 <div id="container">
     <header>
