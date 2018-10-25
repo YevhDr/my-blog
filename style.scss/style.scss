@@ -309,7 +309,6 @@ h5 {
 
 a {
   color: $color !important;
-
 }
 
 a:hover {
@@ -817,4 +816,8 @@ img {
   width: 100%;
   min-height: 60px;
   background: #121714;
+}
+
+.myLink > a {
+  color: #4094ec!important;
 }

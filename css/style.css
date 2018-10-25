@@ -733,4 +733,7 @@ img {
   min-height: 60px;
   background: #121714; }
 
+.myLink > a {
+  color: #4094ec !important; }
+
 /*# sourceMappingURL=style.css.map */
