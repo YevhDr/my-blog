@@ -643,9 +643,6 @@ li.withborder {
   padding: 5px;
   color: #121714; }
 
-li.withborder:hover {
-  font-weight: 800; }
-
 /* --------------------------------
    section appearance animation
 -------------------------------- */
